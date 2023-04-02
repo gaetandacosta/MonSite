@@ -60,7 +60,7 @@ const observer = new IntersectionObserver(entries => {
             //     move(elemID, tab[elemID]);
             //     clearInterval(id)
             // }, 200)
-            move(elemID);
+            move(elemID, tab);
             observer.unobserve(entry.target)
         }
         /*
@@ -73,6 +73,7 @@ const observer = new IntersectionObserver(entries => {
     });
 });
 
+/*
 let i = 0;
 function move(nom) {
     if (i <= Object.keys(tab).length) {
@@ -91,7 +92,7 @@ function move(nom) {
         }
     }
 }
-
+*/
 
 for (const elem in tab) {
     let e = document.getElementById(elem)

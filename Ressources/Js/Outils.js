@@ -56,7 +56,7 @@ const observerOutils = new IntersectionObserver(entries => {
             //     move(elemID, tab[elemID]);
             //     clearInterval(id)
             // }, 200)
-            moveOutils(elemID);
+            move(elemID, tabOutils);
 
         }
         /*
@@ -69,25 +69,6 @@ const observerOutils = new IntersectionObserver(entries => {
     });
 });
 
-
-let i = 0;
-function moveOutils(nom) {
-    if (i <= Object.keys(tabOutils).length) {
-        i += 1;
-        let elem = document.getElementById(nom+"_Progress");
-        let width = 1;
-        let id = setInterval(frame, 10);
-        function frame() {
-            if (width >= tabOutils[nom]) {
-                clearInterval(id);
-                i = 0;
-            } else {
-                width++;
-                elem.style.width = width + "%";
-            }
-        }
-    }
-}
 
 
 for (const elem in tabOutils) {
