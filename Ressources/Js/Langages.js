@@ -1,4 +1,4 @@
-import {Barre} from './Barre.js';
+import {move} from './Barre.js';
 
 let divLangage = document.getElementById("lang-desc")
 
@@ -61,7 +61,7 @@ const observer = new IntersectionObserver(entries => {
             //     move(elemID, tab[elemID]);
             //     clearInterval(id)
             // }, 200)
-            Barre.move(elemID, tab);
+            move(elemID, tab);
             observer.unobserve(entry.target)
         }
         /*
