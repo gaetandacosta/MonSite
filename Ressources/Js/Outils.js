@@ -1,3 +1,5 @@
+import * as Barre from './Barre.js';
+
 let tabOutils = {
     "Git" : 97
 }

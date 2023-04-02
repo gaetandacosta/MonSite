@@ -1,3 +1,5 @@
+import * as Barre from './Barre.js';
+
 let divLangage = document.getElementById("lang-desc")
 
 let tab = { "PHP" : 73,
