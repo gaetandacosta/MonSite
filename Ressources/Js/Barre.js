@@ -9,7 +9,6 @@ class Barre {
             function frame() {
                 if (width >= tab[nom]) {
                     clearInterval(id);
-                    i = 0;
                 } else {
                     width++;
                     elem.style.width = width + "%";
