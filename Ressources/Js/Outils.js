@@ -1,14 +1,10 @@
-let divLangage = document.getElementById("lang-desc")
 
 
-let tab = { "PHP" : 73,
-    "JS" : 78,
-    "HTML" : 89,
-    "JAVA" : 88,
-    "SQL" : 92,
-    "C" : 21
+
+let tab = {
+    "Git" : 97
 }
-
+/*
 let tabDesc = { "PHP" : "Structure MVC, lien avec base de données PostGres, PHPMyAdmin",
     "JS" : "Requêtes AJAX, Listenner, pages intéractives",
     "HTML" : "Site Statique, mono page, plusieurs page",
@@ -16,7 +12,7 @@ let tabDesc = { "PHP" : "Structure MVC, lien avec base de données PostGres, PHP
     "SQL" : "Diférent SGBD, Oracle, PhpMyadmin, Postgres. Array, hstore, lateral, cross-join",
     "C" : "Lecture, Ecriture fichier, inversion pixel image"
 }
-/*
+
 function creerLangage(){
     for (const elem in tab) {
 
@@ -49,7 +45,7 @@ function creerLangage(){
 
 
 
-const observer = new IntersectionObserver(entries => {
+const observerOutils = new IntersectionObserver(entries => {
     // Boucler sur chaque entrée (élément) observé
     entries.forEach(entry => {
         // Vérifier si l'entrée est actuellement visible
@@ -61,7 +57,7 @@ const observer = new IntersectionObserver(entries => {
             //     clearInterval(id)
             // }, 200)
             move(elemID);
-            observer.unobserve(elemID)
+            observerOutils.unobserve(elemID)
         }
         /*
         work in progress
@@ -72,6 +68,7 @@ const observer = new IntersectionObserver(entries => {
          */
     });
 });
+
 
 let i = 0;
 function move(nom) {
@@ -95,7 +92,7 @@ function move(nom) {
 
 for (const elem in tab) {
     let e = document.getElementById(elem)
-    observer.observe(e);
+    observerOutils.observe(e);
 }
 
 
