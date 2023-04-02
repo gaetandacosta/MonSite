@@ -1,0 +1,63 @@
+main{
+    background-color: #d9d9d9;
+    width: 65%;
+    margin-left: 17.5%;
+    border-radius: 20px;
+}
+.Photo_cliquable{
+    display: flex;
+    width: 150px;
+    padding: 10px;
+    transition-duration: 500ms;
+}
+
+.Photo_cliquable:hover{
+    scale: 120%;
+    transition-duration: 500ms;
+}
+
+.Photo_non_cliquable{
+    display: flex;
+    width: 150px;
+    padding: 10px;
+}
+
+
+.div_PP{
+        display: grid;
+    grid-template-columns: 25% 50% 25%;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+
+    text-decoration: none;
+}
+.div_PP a{
+    transition-duration: 200ms;
+    text-decoration: none;
+    font-weight : bold;
+    color: black;
+}
+
+.div_PP a:hover{
+    transition-duration: 200ms;
+    color: #17A095;
+}
+/*
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+ */
+
+.titre_PP{
+    padding-left: 35px;
+    color: #302d2d;
+}
+
+.div_corp{
+    padding: 20px;
+}
+

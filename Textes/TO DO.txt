@@ -1,0 +1,7 @@
+Faire une scrol bar personnalisée pour la navBar et le corp du site..
+
+
+générer le site petit à petit et le laissé afficher (à faire avec l'observateur, et créer les sections petits à petits)
+
+
+Commencé la partie outils informatiques comme les langages mais inversé ?

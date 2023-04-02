@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Gaetan - Accueil</title>
+    <link rel="shortcut icon" href="Ressources/images/gaetan.png"/>
+    <link rel="stylesheet" href="Ressources/css/navBar.css">
+    <link rel="stylesheet" href="Ressources/css/accueil.css">
+    <link rel="stylesheet" href="Ressources/css/Langages.css">
+    <script defer src="Ressources/Js/js-Navbar.js"></script>
+    <script defer src="Ressources/Js/Langages.js"></script>
+</head>
+<body>
+<div class="flex-shrink-0 p-3 navBar">
+    <a href="https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_dark_portfolio&stacked=h"
+       class="d-flex align-items-center pb-3 mb-3 link-body-emphasis text-decoration-none border-bottom">
+        <svg class="bi pe-none me-2" width="30" height="24">
+            <use xlink:href="#bootstrap"/>
+        </svg>
+        <span class="fs-5 fw-semibold">Accueil</span>
+    </a>
+    <ul class="list-unstyled ps-0" id="boutons">
+        <li class="mb-1">
+            <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="false">
+                Compétences
+            </button>
+            <div class="collapse show" id="home-collapse">
+                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                    <li><a href="#lang"
+                           class="link-body-emphasis d-inline-flex text-decoration-none rounded">Langages
+                        Informatiques</a></li>
+                    <li><a href="#outils"
+                           class="link-body-emphasis d-inline-flex text-decoration-none rounded">Outils
+                        Informatiques</a></li>
+                    <li><a href="#"
+                           class="link-body-emphasis d-inline-flex text-decoration-none rounded">Personnelles et
+                        Professionnelles</a></li>
+                </ul>
+            </div>
+        </li>
+        <li class="mb-1">
+            <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
+                Projets
+            </button>
+            <div class="collapse" id="dashboard-collapse">
+                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                    <li><a href="https://alvarotrigo.com/blog/drop-down-menu-javascript/"
+                           class="link-body-emphasis d-inline-flex text-decoration-none rounded">Site Sous Menu</a></li>
+                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">ChocoMaps</a>
+                    </li>
+                    <li><a href="#"
+                           class="link-body-emphasis d-inline-flex text-decoration-none rounded">Chocolask</a></li>
+                    <li><a href="#"
+                           class="link-body-emphasis d-inline-flex text-decoration-none rounded">Aventuriers Du
+                        Rails</a></li>
+                </ul>
+            </div>
+        </li>
+        <li class="mb-1">
+            <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false">
+                Expériences
+            </button>
+            <div class="collapse" id="orders-collapse">
+                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">été 2022</a>
+                    </li>
+                    <li><a href="#"
+                           class="link-body-emphasis d-inline-flex text-decoration-none rounded">Itérim</a></li>
+                    <li><a href="#"
+                           class="link-body-emphasis d-inline-flex text-decoration-none rounded">été 2020/2021</a></li>
+                </ul>
+            </div>
+        </li>
+        <li class="mb-1">
+            <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
+                Me contacter
+            </button>
+            <div class="collapse" id="account-collapse">
+                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                    <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Mail</a></li>
+                    <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Tél</a></li>
+                    <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Formulaire de
+                        contact</a></li>
+                </ul>
+            </div>
+        </li>
+    </ul>
+</div>
+
+<div class="w3-padding-large" id="main">
+    <!-- Header/Home -->
+    <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+        <h1 class="w3-jumbo"><span class="w3-hide-small"></span>Bonjour je suis Gaetan Da Costa.</h1>
+        <p>Étudiant en informatique</p>
+        <img src="Ressources/images/gaetan.png" alt="boy" class="w3-image" width="250" height="250">
+    </header>
+    <div class="w3-content w3-justify w3-text-grey w3-padding-64 fondBlanc" id="about">
+        <h2 class="w3-text-light-grey">À propos de moi</h2>
+        <hr class="w3-opacity trait">
+        <p>Bonjour et bienvenue sur mon portfolio, je suis Gaëtan Da Costa et je vais vous détailler différents aspect
+            de ma vie personnelles et professionelles, mes compétences et aussi
+            différentes experiences dans le monde du travail que j'ai eu.
+            Cela fait maintenant 2 ans que j'étudie en BUT Informatique.
+            Et Depuis mon plus jeune âge, je me suis tourné vers l'informatique,
+            car j'aimais bien essayer de comprendre comment un jeu fonctionnait, en effet, j'essayais de trouver
+            différents bugs et c'est ainsi que je me suis dit "et pourquoi je ne ferais pas des jeux moi aussi".
+            J'ai l'esprit compétiteur mais aussi coopératif, j'aime me donner à fond dans un projet qui me plaît.</p>
+    </div>
+    <div class="w3-content w3-justify w3-text-grey w3-padding-64 fondGris" id="comp">
+        <h2 class="w3-text-light-grey">Mes Compétences</h2>
+        <hr class="w3-opacity trait">
+        <div class="fondGris" id="lang"><h3>Langages informatique</h3>
+            <p>Lors de mes études j'ai pu apprendre de nouveaux langages qui sont les suivant :</p>
+            <div class="lang-desc" id="lang-desc">
+                <div class="lang">
+                    <label for="PHP">PHP</label>
+                    <div id="PHP" class="Progress">
+                        <div id="PHP_Progress" class="Bar"></div>
+                    </div>
+                </div>
+                <div class="desc">
+                    <p>Structure MVC, lien avec base de données PostGres, PHPMyAdmin</p>
+                </div>
+                <div class="lang">
+                    <label for="JS">JavaScript</label>
+                    <div id="JS" class="Progress">
+                        <div id="JS_Progress" class="Bar"></div>
+                    </div>
+                </div>
+                <div class="desc">
+                    <p>Requêtes AJAX, Listenner, pages intéractives</p>
+                </div>
+
+                <div class="lang">
+                    <label for="JAVA">Java</label>
+                    <div id="JAVA" class="Progress">
+                        <div id="JAVA_Progress" class="Bar"></div>
+                    </div>
+                </div>
+                <div class="desc">
+                    <p>Différents Pattern : Composite, Visiteur, Observeur, Factory, Singleton, Proxy, Iterator</p>
+                </div>
+                <div class="lang">
+                    <label for="HTML">Html/CSS</label>
+                    <div id="HTML" class="Progress">
+                        <div id="HTML_Progress" class="Bar"></div>
+                    </div>
+                </div>
+                <div class="desc">
+                    <p>Site Statique, mono page, plusieurs page</p>
+                </div>
+                <div class="lang">
+                    <label for="SQL">SQL</label>
+                    <div id="SQL" class="Progress">
+                        <div id="SQL_Progress" class="Bar"></div>
+                    </div>
+                </div>
+                <div class="desc">
+                    <p>Diférent SGBD, Oracle, PhpMyadmin, Postgres. Array, hstore, lateral, cross-join</p>
+                </div>
+                <div class="lang">
+                    <label for="C">C</label>
+                    <div id="C" class="Progress">
+                        <div id="C_Progress" class="Bar"></div>
+                    </div>
+                </div>
+                <div class="desc">
+                    <p>Lecture, Ecriture fichier, inversion pixel image</p>
+                </div>
+            </div>
+        </div>
+        <div id="outils">
+        <h3 class="w3-text-light-grey">Outils Informatique</h3>
+        <hr class="w3-opacity trait">
+    </div>
+    </div>
+
+    <footer class="footer">
+    </footer>
+</div>
+
+</body>
+</html>
