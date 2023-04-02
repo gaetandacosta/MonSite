@@ -1,4 +1,4 @@
-class Barre {
+export class Barre {
     constructor() {
     }
 
@@ -16,4 +16,3 @@ class Barre {
             }
     }
   }
-module.exports = Barre;
