@@ -1,7 +1,7 @@
 
 
 
-let tab = {
+let tabOutils = {
     "Git" : 97
 }
 /*
@@ -56,7 +56,7 @@ const observerOutils = new IntersectionObserver(entries => {
             //     move(elemID, tab[elemID]);
             //     clearInterval(id)
             // }, 200)
-            move(elemID);
+            moveOutils(elemID);
 
         }
         /*
@@ -71,14 +71,14 @@ const observerOutils = new IntersectionObserver(entries => {
 
 
 let i = 0;
-function move(nom) {
-    if (i <= Object.keys(tab).length) {
+function moveOutils(nom) {
+    if (i <= Object.keys(tabOutils).length) {
         i += 1;
         let elem = document.getElementById(nom+"_Progress");
         let width = 1;
         let id = setInterval(frame, 10);
         function frame() {
-            if (width >= tab[nom]) {
+            if (width >= tabOutils[nom]) {
                 clearInterval(id);
                 i = 0;
             } else {
@@ -90,7 +90,7 @@ function move(nom) {
 }
 
 
-for (const elem in tab) {
+for (const elem in tabOutils) {
     let e = document.getElementById(elem)
     observerOutils.observe(e);
 }
