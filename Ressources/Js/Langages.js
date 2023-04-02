@@ -61,7 +61,7 @@ const observer = new IntersectionObserver(entries => {
             //     clearInterval(id)
             // }, 200)
             move(elemID);
-            observer.unobserve(elemID)
+            observer.unobserve(entry.target)
         }
         /*
         work in progress

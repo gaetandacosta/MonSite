@@ -57,7 +57,7 @@ const observerOutils = new IntersectionObserver(entries => {
             //     clearInterval(id)
             // }, 200)
             move(elemID);
-            observerOutils.unobserve(elemID)
+
         }
         /*
         work in progress
