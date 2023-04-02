@@ -1,5 +1,4 @@
 let divLangage = document.getElementById("lang-desc")
-let m = new Barre();
 
 let tab = { "PHP" : 73,
     "JS" : 78,
@@ -60,7 +59,7 @@ const observer = new IntersectionObserver(entries => {
             //     move(elemID, tab[elemID]);
             //     clearInterval(id)
             // }, 200)
-            m.move(elemID, tab);
+            Barre.move(elemID, tab);
             observer.unobserve(entry.target)
         }
         /*

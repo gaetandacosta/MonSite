@@ -53,7 +53,7 @@ const observerOutils = new IntersectionObserver(entries => {
             //     move(elemID, tab[elemID]);
             //     clearInterval(id)
             // }, 200)
-            m.move(elemID, tabOutils);
+            Barre.move(elemID, tabOutils);
             observerOutils.unobserve(entry.target)
         }
         /*

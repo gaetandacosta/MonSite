@@ -2,7 +2,7 @@ class Barre {
     constructor() {
     }
 
-    move(nom, tab) {
+    static move(nom, tab) {
             let elem = document.getElementById(nom+"_Progress");
             let width = 1;
             let id = setInterval(frame, 10);
