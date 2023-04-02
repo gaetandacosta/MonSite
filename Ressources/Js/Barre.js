@@ -1,4 +1,4 @@
-class Barre {
+export class Barre {
     constructor() {
     }
 

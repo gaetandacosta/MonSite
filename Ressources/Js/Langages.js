@@ -1,4 +1,4 @@
-import * as Barre from './Barre.js';
+import {Employee} from './Barre.js';
 
 let divLangage = document.getElementById("lang-desc")
 
