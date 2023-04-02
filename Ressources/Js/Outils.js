@@ -1,6 +1,3 @@
-
-
-
 let tabOutils = {
     "Git" : 97
 }
