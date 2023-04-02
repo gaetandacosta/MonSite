@@ -1,4 +1,5 @@
-import {Employee} from './Barre.js';
+const Barre = require('./Barre');
+
 
 let divLangage = document.getElementById("lang-desc")
 
