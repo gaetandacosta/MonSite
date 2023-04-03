@@ -1,5 +1,13 @@
-.Compétences{
+.Compétences {
     display: grid;
-    grid-template-columns: 20% 25% 10% 25% 20%;
+    grid-template-columns: 50% 50%;
+    justify-content: center;
+    margin-left: 7%;
+    margin-right: 7%;
+}
 
+.desc-comp{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
 }

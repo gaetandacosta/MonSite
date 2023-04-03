@@ -61,3 +61,32 @@ main{
     padding: 20px;
 }
 
+.gaetan{
+    margin-bottom: -18%;
+    width: 55%;
+    margin-top: -13%;
+}
+
+.btn-home img{
+    width: 35px;
+}
+
+.btn-home{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    background-color: #F5CB5C;
+    border-radius: 50%;
+    transition: 200ms;
+}
+.btn-home:hover{
+    transition: 200ms;
+    transform: scale(110%);
+    background-color: #242423;
+}
