@@ -52,3 +52,27 @@ function cacher(im) {
     im.classList.remove("visible");
     im.classList.add("cache");
 }
+
+/*
+function ouvreBouton(b){
+    if(b.parentElement.classList.contains("mb-2")){
+        b.parentElement.classList.remove("mb-2")
+    }if(!b.parentElement.classList.contains("mb-1")){
+        b.parentElement.classList.add("mb-1")
+    }
+    if (b.getAttribute("aria-expanded") === "false") {
+        b.setAttribute("aria-expanded", "true");
+    }
+}
+
+function fermeBouton(b){
+    if(b.parentElement.classList.contains("mb-1")){
+        b.parentElement.classList.remove("mb-1")
+    }if(!b.parentElement.classList.contains("mb-2")){
+        b.parentElement.classList.add("mb-2")
+    }
+    if (b.getAttribute("aria-expanded") === "true") {
+        b.setAttribute("aria-expanded", "false");
+    }
+}
+ */
