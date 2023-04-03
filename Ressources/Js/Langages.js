@@ -7,6 +7,7 @@ let tab = { "PHP" : 73,
     "HTML" : 89,
     "JAVA" : 88,
     "SQL" : 92,
+    "Py" : 86,
     "C" : 21
 }
 

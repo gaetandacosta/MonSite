@@ -1,7 +1,10 @@
 import * as Barre from './Barre.js';
 
 let tabOutils = {
-    "Git" : 97
+    "Git" : 97,
+    "Canva" : 78,
+    "Docs" : 96,
+    "Fig" : 72,
 }
 /*
 let tabDesc = { "PHP" : "Structure MVC, lien avec base de données PostGres, PHPMyAdmin",
