@@ -1,0 +1,22 @@
+.carrousel{
+    display: flex;
+    flex-direction: row;
+    overflow: scroll;
+    width: 80%;
+    justify-self: center;
+}
+
+.items{
+    list-style-type: none;
+    flex-shrink: 0;
+    margin-left: 1rem;
+}
+
+.img_carte{
+    max-width: 75%;
+}
+
+
+.div_carrousel{
+    display: block ruby;
+}

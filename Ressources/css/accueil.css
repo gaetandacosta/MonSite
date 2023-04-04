@@ -83,10 +83,10 @@ main{
     bottom: 20px;
     background-color: #F5CB5C;
     border-radius: 50%;
-    transition: 200ms;
+    transition: 500ms;
 }
 .btn-home:hover{
-    transition: 200ms;
-    transform: scale(110%);
+    transition: 500ms;
+    transform: scale(120%);
     background-color: #242423;
 }

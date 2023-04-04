@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="Ressources/css/Langages.css">
     <link rel="stylesheet" href="Ressources/css/Outils.css">
     <link rel="stylesheet" href="Ressources/css/Competences.css">
+    <link rel="stylesheet" href="Ressources/css/Carrousel.css">
     <script type="module" src="Ressources/Js/Barre.js"></script>
     <script defer type="text/JavaScript" src="Ressources/Js/js-Navbar.js"></script>
     <script defer type="module" src="Ressources/Js/Langages.js"></script>
@@ -18,11 +19,9 @@
 </head>
 <body>
 <div class="flex-shrink-0 p-3 navBar">
-    <a href="https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_dark_portfolio&stacked=h"
-       class="d-flex align-items-center pb-3 mb-3 link-body-emphasis text-decoration-none border-bottom">
-        <svg class="bi pe-none me-2" width="30" height="24">
-            <use xlink:href="#bootstrap"/>
-        </svg>
+    <svg class="bi pe-none me-2" width="30" height="24">
+        <use xlink:href="#bootstrap"/>
+    </svg>
     </a>
     <ul class="list-unstyled ps-0" id="boutons">
         <li class="mb-1">
@@ -38,7 +37,7 @@
                     <li><a href="#outils"
                            class="link-body-emphasis d-inline-flex text-decoration-none rounded">Outils
                         Informatiques</a></li>
-                    <li><a href="#comp"
+                    <li><a href="#compPers"
                            class="link-body-emphasis d-inline-flex text-decoration-none rounded">Personnelles et
                         Professionnelles</a></li>
                 </ul>
@@ -104,7 +103,7 @@
     <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
         <h1 class="w3-jumbo"><span class="w3-hide-small"></span>Bonjour je suis Gaetan Da Costa.</h1>
         <p>Étudiant en informatique</p>
-        <img src="Ressources/images/gaetan.png" alt="gaetan" class="w3-image gaetan">
+        <img src="Ressources/images/gaetan.jpg" alt="gaetan" class="w3-image gaetan">
     </header>
     <div class="w3-content w3-justify w3-text-grey w3-padding-64 fondBlanc" id="about">
         <h2 class="w3-text-light-grey">À propos de moi</h2>
@@ -235,34 +234,84 @@
 
                 </div>
             </div>
-            <div id="compPers">
-                <hr class="w3-opacity trait">
-                <div class="fondGris"><h3>Qualités personnelles et Compétences professionnelles</h3>
-                    <div class="Compétences">
+        </div>
+        <div id="compPers">
+            <hr class="w3-opacity trait">
+            <div class="fondGris"><h3>Qualités personnelles et Compétences professionnelles</h3>
+                <div class="Compétences">
 
-                        <div class="diagramme_personnel">
-                            <canvas id="personnelle"></canvas>
-                            <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-                        </div>
-                        <div class="desc-comp"><h4>Qualités Personnelles</h4>
-                            <hr class="w3-opacity trait">
-                        <p>Au cours de ma vie, j'ai développé plusiseurs qualités personnelles. Je vous présentes 4 de mes qualité qui me semble assez importantes</p>
-                        </div>
-                        <div class="desc-comp"><h4>Compétences Professionnelles</h4>
-                            <hr class="w3-opacity trait">
-                            <p>Au fils de mes expériences, j'ai découvert que j'aimais acquérir de nouvelles connaissance dans différents domaines, de plus cela m'a permis de développer différentes compétences professionnelles.</p></div>
-                        <div class="diagramme_personnel">
-                            <canvas id="professionnel"></canvas>
-                        </div>
-
-
+                    <div class="diagramme_personnel">
+                        <canvas id="personnelle"></canvas>
+                        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
                     </div>
-                </div>
+                    <div class="desc-comp"><h4>Qualités Personnelles</h4>
+                        <hr class="w3-opacity trait">
+                        <p>Au cours de ma vie, j'ai développé plusiseurs qualités personnelles. Je vous présentes 4
+                            de mes qualité qui me semble assez importantes</p>
+                    </div>
+                    <div class="desc-comp"><h4>Compétences Professionnelles</h4>
+                        <hr class="w3-opacity trait">
+                        <p>Au fils de mes expériences, j'ai découvert que j'aimais acquérir de nouvelles
+                            connaissance dans différents domaines, de plus cela m'a permis de développer différentes
+                            compétences professionnelles.</p></div>
+                    <div class="diagramme_personnel">
+                        <canvas id="professionnel"></canvas>
+                    </div>
 
-                <footer class="footer">
-                </footer>
+
+                </div>
             </div>
         </div>
     </div>
+    <div>
+        <div class="w3-content w3-justify w3-text-grey w3-padding-64 fondBlanc" id="proj">
+            <h2 class="w3-text-light-grey">Mes Projets</h2>
+            <hr class="w3-opacity trait">
+            <div class="div_carrousel">
+
+                <ul class="carrousel">
+                    <li class="items">
+                        <div class="carte">
+                            <img class="img_carte" src="Ressources/images/questions-chocolask.jpg" alt="Page Questions">
+                        </div>
+                    </li>
+                    <li class="items">
+                        <div class="carte">
+                            <img class="img_carte" src="Ressources/images/login-chocolask.jpg" alt="Page de connexion">
+                        </div>
+                    </li>
+                    <li class="items">
+                        <div class="carte">
+                            <img class="img_carte" src="Ressources/images/home-chocolask.jpg" alt="Page d'accueil">
+                        </div>
+                    </li>
+                    <li class="items">
+                        <div class="carte">
+                            <img class="img_carte" src="Ressources/images/create-chocolask.jpg" alt="Page de création de question">
+                        </div>
+                    </li>
+                    <li class="items">
+                        <div class="carte">
+                            <img class="img_carte" src="Ressources/images/users-chocolask.jpg" alt="Page admin">
+                        </div>
+                    </li>
+                    <li class="items">
+                        <div class="carte">
+                            <img class="img_carte" src="Ressources/images/profil-chocolask.jpg" alt="Page de Profil">
+                        </div>
+                    </li>
+
+                </ul>
+
+
+            </div>
+        </div>
+
+        <footer class="footer">
+        </footer>
+    </div>
+</div>
+
+
 </body>
 </html>
