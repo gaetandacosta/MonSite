@@ -6,35 +6,21 @@
     })
 })()
 
+let idBoutonOuvert = null;
 let boutons = document.getElementById("boutons")
 let ulBouton = boutons.querySelectorAll("li");
 
 for (const bouton of ulBouton) {
-    let sousTitre = bouton.querySelectorAll("div")
-    for (const sousTitreElement of sousTitre) {
-        cacher(sousTitreElement)
-    }
+    fermeAll();
     let boutonClick = bouton.querySelectorAll("button")
-
     for (const boutonClickElement of boutonClick) {
-
         boutonClickElement.addEventListener("click", function () {
-                for (const s of sousTitre) {
-                    if (s.classList.contains("cache")) {
-                        visible(s)
-                    } else {
-                        cacher(s)
-                    }
-                }
-                console.log("Clique")
                 if (boutonClickElement.getAttribute("aria-expanded") === "true") {
-                    boutonClickElement.parentElement.classList.remove("mb-2")
-                    boutonClickElement.parentElement.classList.add("mb-1")
-                    boutonClickElement.setAttribute("aria-expanded", "false");
+                    fermeAll()
                 } else {
-                    boutonClickElement.parentElement.classList.add("mb-2")
-                    boutonClickElement.parentElement.classList.remove("mb-1")
-                    boutonClickElement.setAttribute("aria-expanded", "true");
+                    idBoutonOuvert = boutonClickElement.id;
+                    fermeAll()
+                    ouvre(idBoutonOuvert)
                 }
             }
         )
@@ -53,26 +39,36 @@ function cacher(im) {
     im.classList.add("cache");
 }
 
-/*
-function ouvreBouton(b){
-    if(b.parentElement.classList.contains("mb-2")){
-        b.parentElement.classList.remove("mb-2")
-    }if(!b.parentElement.classList.contains("mb-1")){
-        b.parentElement.classList.add("mb-1")
-    }
-    if (b.getAttribute("aria-expanded") === "false") {
-        b.setAttribute("aria-expanded", "true");
+
+function fermeAll() {
+    for (const bouton of ulBouton) {
+        let sousTitre = bouton.querySelectorAll("div")
+        for (const sousTitreElement of sousTitre) {
+            cacher(sousTitreElement)
+        }
+        let boutonClick = bouton.querySelectorAll("button")
+
+        for (const b of boutonClick) {
+            if(b.getAttribute("aria-expanded")==="true"){
+                b.setAttribute("aria-expanded", "false");
+            }if(!b.parentElement.classList.contains("mb-1")){
+                b.parentElement.classList.add("mb-1")
+            }if(b.parentElement.classList.contains("mb-2")){
+                b.parentElement.classList.remove("mb-2")
+            }
+            console.log(b)
+        }
     }
 }
 
-function fermeBouton(b){
-    if(b.parentElement.classList.contains("mb-1")){
-        b.parentElement.classList.remove("mb-1")
-    }if(!b.parentElement.classList.contains("mb-2")){
-        b.parentElement.classList.add("mb-2")
+function ouvre(bid) {
+    let bouton = document.getElementById(bid)
+    let sousTitre = bouton.parentElement.querySelectorAll("div")
+    console.log(sousTitre)
+    for (const s of sousTitre) {
+        visible(s)
     }
-    if (b.getAttribute("aria-expanded") === "true") {
-        b.setAttribute("aria-expanded", "false");
-    }
+    bouton.parentElement.classList.add("mb-2")
+    bouton.parentElement.classList.remove("mb-1")
+    bouton.setAttribute("aria-expanded", "true");
 }
- */
