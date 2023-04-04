@@ -56,7 +56,6 @@ function fermeAll() {
             }if(b.parentElement.classList.contains("mb-2")){
                 b.parentElement.classList.remove("mb-2")
             }
-            console.log(b)
         }
     }
 }
@@ -64,7 +63,6 @@ function fermeAll() {
 function ouvre(bid) {
     let bouton = document.getElementById(bid)
     let sousTitre = bouton.parentElement.querySelectorAll("div")
-    console.log(sousTitre)
     for (const s of sousTitre) {
         visible(s)
     }
