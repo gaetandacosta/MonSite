@@ -1,7 +1,6 @@
 Faire une scrol bar personnalisée pour la navBar et le corp du site..
 
+continuer carrousel
 
-générer le site petit à petit et le laissé afficher (à faire avec l'observateur, et créer les sections petits à petits)
+développer les texte et les passer à scribens
 
-
-Commencé la partie outils informatiques comme les langages mais inversé ?
