@@ -1,7 +1,9 @@
 
 for(let i = 1; i<3;i++){
 
+    console.log("Carroussel_" + i)
     let carrousel = document.getElementById("carrousel_".i)
+    console.log(carrousel)
 
 let diapos = carrousel.querySelectorAll("div");
 let index = 0;
