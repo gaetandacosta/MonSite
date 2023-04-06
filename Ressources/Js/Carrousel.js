@@ -1,7 +1,11 @@
-let diapos = document.querySelectorAll(".diapo");
+
+for(let i = 0; i<2;i++){
+
+
+let diapos = document.querySelectorAll("."+i);
 let index = 0;
-let btnPrev = document.querySelector(".btn-carrousel.prev");
-let btnNext = document.querySelector(".btn-carrousel.next");
+let btnPrev = document.querySelector(".btn-carrousel.prev_"+i);
+let btnNext = document.querySelector(".btn-carrousel.next_"+i);
 function afficherDiapo() {
     for (let i = 0; i < diapos.length; i++) {
         diapos[i].classList.remove("active");
@@ -33,3 +37,4 @@ btnNext.addEventListener("click", function() {
 });
 
 afficherDiapo();
+}
