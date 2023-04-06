@@ -7,8 +7,8 @@ for(let i = 1; i<3;i++){
 
 let diapos = carrousel.querySelectorAll("div");
 let index = 0;
-let btnPrev = carrousel.getElementById("btn-carrousel.prev_"+i);
-let btnNext = carrousel.getElementById("btn-carrousel.next_"+i);
+let btnPrev = carrousel.querySelector(".prev");
+let btnNext = carrousel.querySelector(".next");
 function afficherDiapo() {
     for (let i = 0; i < diapos.length; i++) {
         diapos[i].classList.remove("active");
