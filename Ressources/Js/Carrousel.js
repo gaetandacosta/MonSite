@@ -3,7 +3,7 @@ for(let i = 1; i<3;i++){
 
     let carrousel = document.getElementById("carrouse_".i)
 
-let diapos = document.querySelectorAll("div");
+let diapos = carrousel.querySelectorAll("div");
 let index = 0;
 let btnPrev = document.querySelector(".btn-carrousel.prev_"+i);
 let btnNext = document.querySelector(".btn-carrousel.next_"+i);
