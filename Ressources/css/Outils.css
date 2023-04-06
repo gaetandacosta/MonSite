@@ -21,3 +21,10 @@
     flex-direction: row;
     justify-content: center;
 }
+
+.diagramme_personnel{
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    width: 55%;
+}

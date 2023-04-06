@@ -20,3 +20,74 @@
 .div_carrousel{
     display: block ruby;
 }
+
+.carrousel2 {
+    position: relative;
+    width: 94%;
+    height: 80vh;
+    overflow: hidden;
+    margin-right: 3%;
+    margin-left: 3%;
+}
+.diapo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+.diapo.active {
+    opacity: 1;
+}
+.diapo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.diapo p {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+    color: #d9d9d9;
+    background-color: rgba(36, 36, 35, 0.8);
+}
+
+.btn-carrousel:hover {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    cursor: pointer;
+    font-size: 24px;
+    color: #242423;
+    background-color: rgba(245, 203, 92, 0.8);
+    border-radius: 50px;
+    transition-duration: 250ms;
+    padding: 10px;
+}
+
+.btn-carrousel {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    cursor: pointer;
+    font-size: 24px;
+    color: #d9d9d9;
+    background-color: rgba(36, 36, 35, 0.8);
+    padding: 10px;
+    transition-duration: 250ms;
+}
+.btn-carrousel.prev {
+    left: 0;
+}
+.btn-carrousel.next {
+    right: 0;
+}
+
+

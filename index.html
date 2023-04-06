@@ -10,12 +10,14 @@
     <link rel="stylesheet" href="Ressources/css/Outils.css">
     <link rel="stylesheet" href="Ressources/css/Competences.css">
     <link rel="stylesheet" href="Ressources/css/Carrousel.css">
+    <link rel="stylesheet" href="Ressources/css/Projets.css">
     <script type="module" src="Ressources/Js/Barre.js"></script>
     <script defer type="text/JavaScript" src="Ressources/Js/js-Navbar.js"></script>
     <script defer type="module" src="Ressources/Js/Langages.js"></script>
     <script defer type="module" src="Ressources/Js/Outils.js"></script>
     <script defer type="module" src="Ressources/Js/BoutonHome.js"></script>
     <script defer type="module" src="Ressources/Js/Competences.js"></script>
+    <script defer type="module" src="Ressources/Js/Carrousel.js"></script>
 </head>
 <body>
 <div class="flex-shrink-0 p-3 navBar">
@@ -52,7 +54,11 @@
                 <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
                     <li><a href="https://alvarotrigo.com/blog/drop-down-menu-javascript/"
                            class="link-body-emphasis d-inline-flex text-decoration-none rounded">Site Sous Menu</a></li>
+
                     <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">ChocoMaps</a>
+                    </li>
+                    <li><a href="#"
+                           class="link-body-emphasis d-inline-flex text-decoration-none rounded">Code Game Jam 2023</a>
                     </li>
                     <li><a href="#"
                            class="link-body-emphasis d-inline-flex text-decoration-none rounded">Chocolask</a></li>
@@ -120,7 +126,7 @@
     <div class="w3-content w3-justify w3-text-grey w3-padding-64 fondGris" id="comp">
         <h2 class="w3-text-light-grey">Mes Compétences</h2>
         <hr class="w3-opacity trait">
-        <div class="fondGris" id="lang"><h3>Langages informatique</h3>
+        <div id="lang"><h3>Langages informatique</h3>
             <p>Lors de mes études j'ai pu apprendre de nouveaux langages qui sont les suivant :</p>
             <div class="lang-desc" id="lang-desc">
                 <div class="lang">
@@ -191,7 +197,7 @@
         </div>
         <div id="outils">
             <hr class="w3-opacity trait">
-            <div class="fondGris" id="outils-desc"><h3>Outils informatique</h3>
+            <div id="outils-desc"><h3>Outils informatique</h3>
                 <p>Lors de mes études j'ai appris à maitriser différents outils :</p>
                 <div class="desc-lang" id="desc-lang">
                     <div class="desc">
@@ -237,73 +243,62 @@
         </div>
         <div id="compPers">
             <hr class="w3-opacity trait">
-            <div class="fondGris"><h3>Qualités personnelles et Compétences professionnelles</h3>
-                <div class="Compétences">
+            <div><h3>Qualités personnelles et Compétences professionnelles</h3>
+                <table class="Compétences">
+                    <tr>
+                        <td class="diagramme_personnel">
 
-                    <div class="diagramme_personnel">
-                        <canvas id="personnelle"></canvas>
-                        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-                    </div>
-                    <div class="desc-comp"><h4>Qualités Personnelles</h4>
-                        <hr class="w3-opacity trait">
-                        <p>Au cours de ma vie, j'ai développé plusiseurs qualités personnelles. Je vous présentes 4
-                            de mes qualité qui me semble assez importantes</p>
-                    </div>
-                    <div class="desc-comp"><h4>Compétences Professionnelles</h4>
-                        <hr class="w3-opacity trait">
-                        <p>Au fils de mes expériences, j'ai découvert que j'aimais acquérir de nouvelles
-                            connaissance dans différents domaines, de plus cela m'a permis de développer différentes
-                            compétences professionnelles.</p></div>
-                    <div class="diagramme_personnel">
-                        <canvas id="professionnel"></canvas>
-                    </div>
+                            <canvas id="personnelle"></canvas>
+                            <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+                        </td>
+                        <td class="desc-comp">
+                            <h4>Qualités Personnelles</h4>
+                            <hr class="w3-opacity trait">
+                            <p>Au cours de ma vie, j'ai développé plusiseurs qualités personnelles. Je vous présentes 4
+                                de mes qualité qui me semble assez importantes</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="desc-comp">
+                            <h4>Compétences Professionnelles</h4>
+                            <hr class="w3-opacity trait">
+                            <p>Au fils de mes expériences, j'ai découvert que j'aimais acquérir de nouvelles
+                                connaissance dans différents domaines, de plus cela m'a permis de développer différentes
+                                compétences professionnelles.</p>
+                        </td>
+                        <td class="diagramme_personnel">
+                            <canvas id="professionnel"></canvas>
+                        </td>
+                    </tr>
+                </table>
 
-
-                </div>
             </div>
         </div>
     </div>
     <div>
         <div class="w3-content w3-justify w3-text-grey w3-padding-64 fondBlanc" id="proj">
             <h2 class="w3-text-light-grey">Mes Projets</h2>
-            <hr class="w3-opacity trait">
-            <div class="div_carrousel">
+            <div>
+                <hr class="w3-opacity trait">
+                <h3>Chocolask</h3>
+                <div class="carrousel2" id="carrousel">
 
-                <ul class="carrousel">
-                    <li class="items">
-                        <div class="carte">
-                            <img class="img_carte" src="Ressources/images/questions-chocolask.jpg" alt="Page Questions">
-                        </div>
-                    </li>
-                    <li class="items">
-                        <div class="carte">
-                            <img class="img_carte" src="Ressources/images/login-chocolask.jpg" alt="Page de connexion">
-                        </div>
-                    </li>
-                    <li class="items">
-                        <div class="carte">
-                            <img class="img_carte" src="Ressources/images/home-chocolask.jpg" alt="Page d'accueil">
-                        </div>
-                    </li>
-                    <li class="items">
-                        <div class="carte">
-                            <img class="img_carte" src="Ressources/images/create-chocolask.jpg" alt="Page de création de question">
-                        </div>
-                    </li>
-                    <li class="items">
-                        <div class="carte">
-                            <img class="img_carte" src="Ressources/images/users-chocolask.jpg" alt="Page admin">
-                        </div>
-                    </li>
-                    <li class="items">
-                        <div class="carte">
-                            <img class="img_carte" src="Ressources/images/profil-chocolask.jpg" alt="Page de Profil">
-                        </div>
-                    </li>
-
-                </ul>
-
-
+                    <div class="diapo active">
+                        <img src="Ressources/images/home-chocolask.jpg">
+                        <p>Page d'accueil</p>
+                    </div>
+                    <div class="diapo">
+                        <img src="Ressources/images/login-chocolask.jpg">
+                        <p>Page de connextion</p>
+                    </div>
+                    <div class="diapo">
+                        <img src="Ressources/images/create-chocolask.jpg">
+                        <p>Page de création de question</p>
+                    </div>
+                    <button id="btn-carrousel_prev" class="btn-carrousel prev">Précédent</button>
+                    <button id="btn-carrousel_next" class="btn-carrousel next">Suivant</button>
+                </div>
+                <p class="desc-projet">Le but de ce projet était de créer un site web dynamique en php, html, css et un peu de JavaScript. Ce site est un endroit où les utilisateurs peuvent se créer un compte ou se connecter afin de poser des questions, de proposer des réponses et de voter pour les réponses qu'ils prefèrent</p>
             </div>
         </div>
 

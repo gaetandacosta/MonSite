@@ -29,11 +29,15 @@
 
 
 .fondBlanc{
+    opacity: 1;
     padding-top: 5%;
+    padding-bottom: 5%;
     background: #E8EDDF;
 }
 .fondGris{
+    opacity: 0.90;
     padding-top: 5%;
+    padding-bottom: 5%;
     background: #CFDBD5;
 }
 .lang-desc{
