@@ -84,6 +84,7 @@ main{
     background-color: #F5CB5C;
     border-radius: 50%;
     transition: 500ms;
+    z-index: 1;
 }
 .btn-home:hover{
     transition: 500ms;
