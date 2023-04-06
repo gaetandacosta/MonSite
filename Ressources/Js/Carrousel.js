@@ -9,6 +9,7 @@ for (const projet of listeDivProjets) {
 
 
     let carrousel = projet.querySelector("div")
+    console.log(carrousel)
 
 
 let diapos = carrousel.querySelectorAll("div");
