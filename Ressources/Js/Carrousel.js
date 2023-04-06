@@ -14,8 +14,17 @@ for (const projet of listeDivProjets) {
 
 let diapos = carrousel.querySelectorAll("div");
 let index = 0;
-let btnPrev = carrousel.querySelector(".prev");
-let btnNext = carrousel.querySelector(".next");
+let btnPrev = carrousel.querySelector(".btn-carrousel.prev");
+let btnNext = carrousel.querySelector(".btn-carrousel.next");
+btnPrev.addEventListener("click", function() {
+    diapoPrecedente();
+    afficherDiapo();
+});
+
+btnNext.addEventListener("click", function() {
+    diapoSuivante();
+    afficherDiapo();
+});
 function afficherDiapo() {
     for (let i = 0; i < diapos.length; i++) {
         diapos[i].classList.remove("active");
@@ -36,15 +45,7 @@ function diapoPrecedente() {
     }
 }
 
-btnPrev.addEventListener("click", function() {
-    diapoPrecedente();
-    afficherDiapo();
-});
 
-btnNext.addEventListener("click", function() {
-    diapoSuivante();
-    afficherDiapo();
-});
 
 afficherDiapo();
 }
