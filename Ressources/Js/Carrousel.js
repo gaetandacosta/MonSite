@@ -1,7 +1,7 @@
 
 for(let i = 1; i<3;i++){
 
-    let carrousel = document.getElementById("carrouse_".i)
+    let carrousel = document.getElementById("carrousel_".i)
 
 let diapos = carrousel.querySelectorAll("div");
 let index = 0;
