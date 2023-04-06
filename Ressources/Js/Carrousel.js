@@ -2,7 +2,7 @@
 for(let i = 1; i<3;i++){
 
 
-let diapos = document.querySelectorAll("."+i);
+let diapos = document.querySelectorAll(i);
 let index = 0;
 let btnPrev = document.querySelector(".btn-carrousel.prev_"+i);
 let btnNext = document.querySelector(".btn-carrousel.next_"+i);
