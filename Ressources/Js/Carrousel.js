@@ -5,8 +5,8 @@ for(let i = 1; i<3;i++){
 
 let diapos = carrousel.querySelectorAll("div");
 let index = 0;
-let btnPrev = document.querySelector(".btn-carrousel.prev_"+i);
-let btnNext = document.querySelector(".btn-carrousel.next_"+i);
+let btnPrev = carrousel.getElementById("btn-carrousel.prev_"+i);
+let btnNext = carrousel.getElementById("btn-carrousel.next_"+i);
 function afficherDiapo() {
     for (let i = 0; i < diapos.length; i++) {
         diapos[i].classList.remove("active");
