@@ -1,5 +1,5 @@
 
-for(let i = 0; i<2;i++){
+for(let i = 1; i<3;i++){
 
 
 let diapos = document.querySelectorAll("."+i);
