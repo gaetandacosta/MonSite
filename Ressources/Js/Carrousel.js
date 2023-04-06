@@ -1,6 +1,6 @@
 
 let proj = document.getElementById("proj")
-let listeDivProjets = proj.querySelectorAll("div")
+let listeDivProjets = proj.querySelectorAll(".total_projet")
 for (const projet of listeDivProjets) {
     
 
