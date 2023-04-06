@@ -1,9 +1,15 @@
 
-for(let i = 1; i<3;i++){
+let proj = document.getElementById("proj")
+let listeDivProjets = proj.querySelector("div")
+for (const projet of listeDivProjets) {
+    
 
-    console.log("Carroussel_" + i)
-    let carrousel = document.getElementById("carrousel_"+i)
-    console.log(carrousel)
+
+
+
+
+    let carrousel = projet.querySelector("carrousel2")
+
 
 let diapos = carrousel.querySelectorAll("div");
 let index = 0;
