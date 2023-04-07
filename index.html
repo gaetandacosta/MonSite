@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Gaetan - Accueil</title>
-    <link rel="shortcut icon" href="https://cdn.discordapp.com/attachments/782961560061476894/1093527643443449886/gaetan-mini.png"/>
+    <link rel="shortcut icon"
+          href="https://cdn.discordapp.com/attachments/782961560061476894/1093527643443449886/gaetan-mini.png"/>
     <link rel="stylesheet" href="Ressources/css/navBar.css">
     <link rel="stylesheet" href="Ressources/css/accueil.css">
     <link rel="stylesheet" href="Ressources/css/Langages.css">
@@ -52,12 +53,9 @@
             </button>
             <div class="collapse" id="dashboard-collapse">
                 <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                    <li><a href="https://alvarotrigo.com/blog/drop-down-menu-javascript/"
-                           class="link-body-emphasis d-inline-flex text-decoration-none rounded">Site Sous Menu</a></li>
-
-                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">ChocoMaps</a>
+                    <li><a href="#Chocomaps" class="link-body-emphasis d-inline-flex text-decoration-none rounded">ChocoMaps</a>
                     </li>
-                    <li><a href="#"
+                    <li><a href="#CGJ"
                            class="link-body-emphasis d-inline-flex text-decoration-none rounded">Code Game Jam 2023</a>
                     </li>
                     <li><a href="#Chocolask"
@@ -109,7 +107,8 @@
     <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
         <h1 class="w3-jumbo"><span class="w3-hide-small"></span>Bonjour je suis Gaetan Da Costa.</h1>
         <p>Étudiant en informatique</p>
-        <img src="https://cdn.discordapp.com/attachments/782961560061476894/1093527643829321758/gaetan.jpg" alt="gaetan" class="w3-image gaetan">
+        <img src="https://cdn.discordapp.com/attachments/782961560061476894/1093527643829321758/gaetan.jpg" alt="gaetan"
+             class="w3-image gaetan">
     </header>
     <div class="w3-content w3-justify w3-text-grey w3-padding-64 fondBlanc" id="about">
         <h2 class="w3-text-light-grey">À propos de moi</h2>
@@ -278,6 +277,80 @@
     <div>
         <div class="w3-content w3-justify w3-text-grey w3-padding-64 fondBlanc" id="proj">
             <h2 class="w3-text-light-grey">Mes Projets</h2>
+
+
+            <div class="total_projet">
+                <hr class="w3-opacity trait">
+                <h3 id="Chocomaps">ChocoMaps</h3>
+                <div class="carrousel2">
+
+                    <div class="diapo active">
+                        <img src="https://cdn.discordapp.com/attachments/782961560061476894/1093616417322053783/maquette-AVD.jpg">
+                        <p>Page d'accueil</p>
+                    </div>
+                    <div class="diapo">
+                        <img src="https://cdn.discordapp.com/attachments/782961560061476894/1093616417603067945/interFaceFinale-AVD.jpg">
+                        <p>Page de calcul d'itinéraire</p>
+                    </div>
+
+                    <button class="btn-carrousel prev">Précédent</button>
+                    <button class="btn-carrousel next">Suivant</button>
+                </div>
+                <p class="desc-projet">Le projet consistait à optimiser une base de données et des algorithme afin de pourvoir avoir une application qui peut calculer diférents trajets en France, en quelques secondes</p>
+
+            </div>
+            <div class="total_projet">
+                <hr class="w3-opacity trait">
+                <h3 id="CGJ">Code Game Jam 2023</h3>
+                <div class="carrousel2">
+
+                    <div class="diapo active">
+                        <img src="https://cdn.discordapp.com/attachments/782961560061476894/1093616417322053783/maquette-AVD.jpg">
+                        <p>Page d'accueil</p>
+                    </div>
+                    <div class="diapo">
+                        <img src="https://cdn.discordapp.com/attachments/782961560061476894/1093616417603067945/interFaceFinale-AVD.jpg">
+                        <p>Page de calcul d'itinéraire</p>
+                    </div>
+
+                    <button class="btn-carrousel prev">Précédent</button>
+                    <button class="btn-carrousel next">Suivant</button>
+                </div>
+                <p class="desc-projet">J'ai participé à la Code Game Jam 2023, le but est très simple : nous avons un thème (cette année c'était "maître du temps") et nous devons concevoir un jeu en 24h (brain storm non compris) en respectant ce thème.
+                Ce fût une superbe experience !</p>
+
+            </div>
+            <div class="total_projet">
+                <hr class="w3-opacity trait">
+                <h3 id="AVD">Aventuriers du Rails Europe</h3>
+                <div class="carrousel2">
+
+                    <div class="diapo active">
+                        <img src="https://cdn.discordapp.com/attachments/782961560061476894/1093616417322053783/maquette-AVD.jpg">
+                        <p>Maquette du Projet</p>
+                    </div>
+                    <div class="diapo">
+                        <img src="https://cdn.discordapp.com/attachments/782961560061476894/1093616417603067945/interFaceFinale-AVD.jpg">
+                        <p>Interface finale</p>
+                    </div>
+
+                    <button class="btn-carrousel prev">Précédent</button>
+                    <button class="btn-carrousel next">Suivant</button>
+                </div>
+                <p class="desc-projet">Nous devions créer le jeu de société "Les Aventuriers du Rails Europe" en JAVA en
+                    Binôme. Le projet était divisé en 3 partie :</p>
+                <ul>
+                    <li>Le code</li>
+                    <li>Les graphes</li>
+                    <li>L'interface</li>
+                </ul>
+                <p class="desc-projet">Pour la partie code nous avions une interface fonctonnel et nous devions faire le
+                    code du jeu en prenant en compte les règles du jeu et des tests qui nous ont été fournis. Pour la
+                    partie graphe, nous devions utiliser diférents algorithmes afin de calculer le court trajet, le plus
+                    long, etc... Enfin, pour la partie de l'interface, nous avions un code fonctionnel et on devais
+                    réaliser l'interface fonctionnelle du jeu. Cela va être difficile de vous illustrer le code donc je
+                    vous montre que la partie de l'interface.</p>
+            </div>
             <div class="total_projet">
                 <hr class="w3-opacity trait">
                 <h3 id="Chocolask">Chocolask</h3>
@@ -308,38 +381,24 @@
                         <img src="https://cdn.discordapp.com/attachments/782961560061476894/1093527644114518036/create-chocolask.jpg">
                         <p>Page de création de question</p>
                     </div>
-                    <button id="btn-carrousel_prev_1" class="btn-carrousel prev">Précédent</button>
-                    <button id="btn-carrousel_next_1" class="btn-carrousel next">Suivant</button>
+                    <button class="btn-carrousel prev">Précédent</button>
+                    <button class="btn-carrousel next">Suivant</button>
                 </div>
-                <p class="desc-projet">Le but de ce projet était de créer un site web dynamique en php, html, css et un peu de JavaScript. Ce site est un endroit où les utilisateurs peuvent se créer un compte ou se connecter afin de poser des questions, de proposer des réponses et de voter pour les réponses qu'ils prefèrent</p>
-            </div>
-            <div class="total_projet">
-                <hr class="w3-opacity trait">
-                <h3 id="AVD">Aventuriers du Rails Europe</h3>
-                <div class="carrousel2">
-
-                    <div class="diapo active">
-                        <img src="https://cdn.discordapp.com/attachments/782961560061476894/1093616417322053783/maquette-AVD.jpg">
-                        <p>Maquette du Projet</p>
-                    </div>
-                    <div class="diapo">
-                        <img src="https://cdn.discordapp.com/attachments/782961560061476894/1093616417603067945/interFaceFinale-AVD.jpg">
-                        <p>Interface finale</p>
-                    </div>
-                    
-                    <button id="btn-carrousel_prev_2" class="btn-carrousel prev">Précédent</button>
-                    <button id="btn-carrousel_next_2" class="btn-carrousel next">Suivant</button>
-                </div>
-                <p class="desc-projet">Nous devions créer le jeu de société "Les Aventuriers du Rails Europe" en JAVA en Binôme. Le projet était divisé en 3 partie :</p>
-                <ul>
-                    <li>Le code</li>
-                    <li>Les graphes</li>
-                    <li>L'interface</li>
-                </ul>
-                <p class="desc-projet">Pour la partie code nous avions une interface fonctonnel et nous devions faire le code du jeu en prenant en compte les règles du jeu et des tests qui nous ont été fournis. Pour la partie graphe, nous devions utiliser diférents algorithmes afin de calculer le court trajet, le plus long, etc... Enfin, pour la partie de l'interface, nous avions un code fonctionnel et on devais réaliser l'interface fonctionnelle du jeu. Cela va être difficile de vous illustrer le code donc je vous montre que la partie de l'interface.</p>
+                <p class="desc-projet">Le but de ce projet était de créer un site web dynamique en php, html, css et un
+                    peu de JavaScript. Ce site est un endroit où les utilisateurs peuvent se créer un compte ou se
+                    connecter afin de poser des questions, de proposer des réponses et de voter pour les réponses qu'ils
+                    prefèrent</p>
             </div>
         </div>
+        <div class="w3-content w3-justify w3-text-grey w3-padding-64 fondGris" id="jobs">
+            <h2 class="w3-text-light-grey">Mes expériences proféssionnelles</h2>
+            <div class="">
+                <hr class="w3-opacity trait">
+                <h3 id="ete_2022">été 2022</h3>
 
+            </div>
+
+        </div>
         <footer class="footer">
         </footer>
     </div>
