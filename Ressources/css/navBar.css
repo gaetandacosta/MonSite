@@ -189,3 +189,13 @@ h3{
     margin-bottom: 1.5%;
 }
 
+#link{
+    text-underline-style: none;
+      color: #302d2d;
+    transition-duration: 200ms;
+    font-weight: 600;
+}
+#link:hover{
+    color: #242423;
+    transition-duration: 200ms;
+}

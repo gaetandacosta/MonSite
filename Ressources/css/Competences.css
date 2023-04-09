@@ -14,10 +14,11 @@
     display: flex;
     width: 100%;
     padding-bottom: 2%;
+    justify-content: center;
     padding-top: 2%;
 }
 .Compétences tr td{
-    width: 50%;
+    width: 30%;
 }
 .Compétences tr:first-child{
     border-bottom: 1px solid #242423;
