@@ -199,3 +199,13 @@ h3{
     color: #242423;
     transition-duration: 200ms;
 }
+#more{
+    text-underline-style: none;
+    color: #302d2d;
+    transition-duration: 200ms;
+    font-weight: 600;
+}
+#more:hover{
+    color: #242423;
+    transition-duration: 200ms;
+}
