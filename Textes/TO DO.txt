@@ -1,6 +1,0 @@
-Faire une scrol bar personnalisée pour la navBar et le corp du site..
-
-continuer carrousel
-
-développer les texte et les passer à scribens
-

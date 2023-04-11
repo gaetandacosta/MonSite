@@ -189,23 +189,17 @@ h3{
     margin-bottom: 1.5%;
 }
 
-#link{
-    text-underline-style: none;
-      color: #302d2d;
-    transition-duration: 200ms;
-    font-weight: 600;
-}
-#link:hover{
+.bouton{
     color: #242423;
     transition-duration: 200ms;
+    text-decoration: none;
+    border-radius: 10px;
+    background-color: #F5CB5C;
 }
-#more{
-    text-underline-style: none;
-    color: #302d2d;
+
+.bouton:hover{
+    background-color: #242423;
+    color: #F5CB5C;
     transition-duration: 200ms;
-    font-weight: 600;
-}
-#more:hover{
-    color: #242423;
-    transition-duration: 200ms;
+    border-radius: 0px;
 }
