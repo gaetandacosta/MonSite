@@ -196,6 +196,8 @@ h3{
     border-radius: 10px;
     background-color: #F5CB5C;
     padding: 2px;
+    width: 20%;
+    margin: 2%;
 }
 
 .bouton:hover{
@@ -209,4 +211,11 @@ h3{
 
 .exps p{
     padding: 10%
+}
+
+.me_contacter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
