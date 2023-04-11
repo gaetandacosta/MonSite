@@ -195,6 +195,7 @@ h3{
     text-decoration: none;
     border-radius: 10px;
     background-color: #F5CB5C;
+    padding: 2px;
 }
 
 .bouton:hover{
@@ -202,4 +203,10 @@ h3{
     color: #F5CB5C;
     transition-duration: 200ms;
     border-radius: 0px;
+    padding: 2px
+}
+
+
+.exps p{
+    padding: 2%
 }
