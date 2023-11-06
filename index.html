@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <title>Gaetan - PortFolio</title>
     <link rel="shortcut icon"
-          href="https://cdn.discordapp.com/attachments/782961560061476894/1093527643443449886/gaetan-mini.png"/>
+        href="https://cdn.discordapp.com/attachments/782961560061476894/1093527643443449886/gaetan-mini.png" />
     <link rel="stylesheet" href="Ressources/css/navBar.css">
     <link rel="stylesheet" href="Ressources/css/accueil.css">
     <link rel="stylesheet" href="Ressources/css/Langages.css">
@@ -21,477 +22,554 @@
     <script defer type="module" src="Ressources/Js/Competences.js"></script>
     <script defer type="module" src="Ressources/Js/Carrousel.js"></script>
 </head>
+
 <body>
-<div class="flex-shrink-0 p-3 navBar">
-    <svg class="bi pe-none me-2" width="30" height="24">
-        <use xlink:href="#bootstrap"/>
-    </svg>
-    </a>
-    <ul class="list-unstyled ps-0" id="boutons">
-        <li class="mb-1">
-            <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+    <div class="flex-shrink-0 p-3 navBar">
+        <svg class="bi pe-none me-2" width="30" height="24">
+            <use xlink:href="#bootstrap" />
+        </svg>
+        </a>
+        <ul class="list-unstyled ps-0" id="boutons">
+            <li class="mb-1">
+                <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
                     data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="false" id="1">
-                Compétences
-            </button>
-            <div class="collapse show" id="home-collapse">
-                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                    <li><a href="#lang"
-                           class="link-body-emphasis d-inline-flex text-decoration-none rounded">Langages
-                        Informatiques</a></li>
-                    <li><a href="#outils"
-                           class="link-body-emphasis d-inline-flex text-decoration-none rounded">Outils
-                        Informatiques</a></li>
-                    <li><a href="#compPers"
-                           class="link-body-emphasis d-inline-flex text-decoration-none rounded">Personnelles et
-                        Professionnelles</a></li>
-                </ul>
-            </div>
-        </li>
-        <li class="mb-1">
-            <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+                    Compétences
+                </button>
+                <div class="collapse show" id="home-collapse">
+                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                        <li><a href="#lang"
+                                class="link-body-emphasis d-inline-flex text-decoration-none rounded">Langages
+                                Informatiques</a></li>
+                        <li><a href="#outils"
+                                class="link-body-emphasis d-inline-flex text-decoration-none rounded">Outils
+                                Informatiques</a></li>
+                        <li><a href="#compPers"
+                                class="link-body-emphasis d-inline-flex text-decoration-none rounded">Personnelles et
+                                Professionnelles</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="mb-1">
+                <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
                     data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false" id="2">
-                Projets
-            </button>
-            <div class="collapse" id="dashboard-collapse">
-                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                    <li><a href="#Chocomaps" class="link-body-emphasis d-inline-flex text-decoration-none rounded">ChocoMaps</a>
-                    </li>
-                    <li><a href="#CGJ"
-                           class="link-body-emphasis d-inline-flex text-decoration-none rounded">Code Game Jam 2023</a>
-                    </li>
-                    <li><a href="#Chocolask"
-                           class="link-body-emphasis d-inline-flex text-decoration-none rounded">Chocolask</a></li>
-                    <li><a href="#AVD"
-                           class="link-body-emphasis d-inline-flex text-decoration-none rounded">Aventuriers Du
-                        Rails</a></li>
-                </ul>
-            </div>
-        </li>
-        <li class="mb-1">
-            <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+                    Projets
+                </button>
+                <div class="collapse" id="dashboard-collapse">
+                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                        <li><a href="#Chocomaps"
+                                class="link-body-emphasis d-inline-flex text-decoration-none rounded">ChocoMaps</a>
+                        </li>
+                        <li><a href="#CGJ" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Code
+                                Game Jam 2023</a>
+                        </li>
+                        <li><a href="#Chocolask"
+                                class="link-body-emphasis d-inline-flex text-decoration-none rounded">Chocolask</a></li>
+                        <li><a href="#AVD"
+                                class="link-body-emphasis d-inline-flex text-decoration-none rounded">Aventuriers Du
+                                Rails</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="mb-1">
+                <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
                     data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false" id="3">
-                Expériences
-            </button>
-            <div class="collapse" id="orders-collapse">
-                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                    <li><a href="#ete_2023" class="link-body-emphasis d-inline-flex text-decoration-none rounded">été 2023</a></li>
-                    <li><a href="#stage_chrtec" class="link-body-emphasis d-inline-flex text-decoration-none rounded">stage chronotech</a></li>
-                    <li><a href="#ete_2022" class="link-body-emphasis d-inline-flex text-decoration-none rounded">été 2022</a>
-                    </li>
-                    <li><a href="#Interim"
-                           class="link-body-emphasis d-inline-flex text-decoration-none rounded">Itérim</a></li>
-                    <li><a href="#été_20202021"
-                           class="link-body-emphasis d-inline-flex text-decoration-none rounded">été 2020/2021</a></li>
-                </ul>
-            </div>
-        </li>
-        <li class="mb-1">
-            <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+                    Expériences
+                </button>
+                <div class="collapse" id="orders-collapse">
+                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                        <li><a href="#ete_2023"
+                                class="link-body-emphasis d-inline-flex text-decoration-none rounded">été 2023</a></li>
+                        <li><a href="#stage_chrtec"
+                                class="link-body-emphasis d-inline-flex text-decoration-none rounded">stage
+                                chronotech</a></li>
+                        <li><a href="#ete_2022"
+                                class="link-body-emphasis d-inline-flex text-decoration-none rounded">été 2022</a>
+                        </li>
+                        <li><a href="#Interim"
+                                class="link-body-emphasis d-inline-flex text-decoration-none rounded">Itérim</a></li>
+                        <li><a href="#été_20202021"
+                                class="link-body-emphasis d-inline-flex text-decoration-none rounded">été 2020/2021</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="mb-1">
+                <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
                     data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false" id="4">
-                Me contacter
-            </button>
-            <div class="collapse" id="account-collapse">
-                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                    <li><a href="#mail" class="link-dark d-inline-flex text-decoration-none rounded">Mail</a></li>
-                    <li><a href="#tel" class="link-dark d-inline-flex text-decoration-none rounded">Télephone</a></li>
-                    <li><a href="#link" class="link-dark d-inline-flex text-decoration-none rounded">Linkedin</a></li>
-                    <li><a href="#github" class="link-dark d-inline-flex text-decoration-none rounded">GitHub</a></li>
-                    <li><a href="#more" class="link-dark d-inline-flex text-decoration-none rounded">Plus d'informations</a></li>
-                    <li><a href="#cv" class="link-dark d-inline-flex text-decoration-none rounded">Mon CV</a></li>
-                </ul>
-            </div>
-        </li>
-    </ul>
-</div>
-<div class="btn-home" id="btn-home">
-    <img src="https://cdn.discordapp.com/attachments/782961560061476894/1093527644345225346/black-arrow-up.png">
-</div>
-
-<div class="w3-padding-large" id="main">
-    <!-- Header/Home -->
-    <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
-        <h1 class="w3-jumbo"><span class="w3-hide-small"></span>Bonjour, je suis Gaëtan Da Costa.</h1>
-        <p>Étudiant en informatique</p>
-        <img src="https://cdn.discordapp.com/attachments/782961560061476894/1093527643829321758/gaetan.jpg" alt="gaetan"
-             class="w3-image gaetan">
-    </header>
-    <div class="w3-content w3-justify w3-text-grey w3-padding-64 fondBlanc" id="about">
-        <h2 class="w3-text-light-grey">À propos de moi</h2>
-        <hr class="w3-opacity trait">
-        <p>Bonjour et bienvenue sur mon portfolio, je suis Gaëtan Da Costa et je vais vous détailler différents aspects de ma vie personnelles et professionnelles, mes compétences et aussi différentes expériences dans le monde du travail que j'ai eu. Cela fait maintenant 2 ans que j'étudie en BUT Informatique. Et depuis mon plus jeune âge, je me suis tourné vers l'informatique, car j'aimais bien essayer de comprendre comment un jeu fonctionnait, en effet, j'essayais de trouver différents bugs et c'est ainsi que je me suis dit "et pourquoi je ne ferais pas des jeux moi aussi". J'ai l'esprit compétiteur mais aussi coopératif, j'aime me donner à fond dans un projet qui me plaît. Plus tard, j'envisage de travailler dans la conception de logiciels ou applications. J'aime bien le web et les bases de données, de plus j'aime analyser et trouver des solutions aux problèmes trouvés.
-
-
-        </p>
+                    Me contacter
+                </button>
+                <div class="collapse" id="account-collapse">
+                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                        <li><a href="#mail" class="link-dark d-inline-flex text-decoration-none rounded">Mail</a></li>
+                        <li><a href="#tel" class="link-dark d-inline-flex text-decoration-none rounded">Télephone</a>
+                        </li>
+                        <li><a href="#link" class="link-dark d-inline-flex text-decoration-none rounded">Linkedin</a>
+                        </li>
+                        <li><a href="#github" class="link-dark d-inline-flex text-decoration-none rounded">GitHub</a>
+                        </li>
+                        <li><a href="#more" class="link-dark d-inline-flex text-decoration-none rounded">Plus
+                                d'informations</a></li>
+                        <li><a href="#cv" class="link-dark d-inline-flex text-decoration-none rounded">Mon CV</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
     </div>
-    <div class="w3-content w3-justify w3-text-grey w3-padding-64 fondGris" id="comp">
-        <h2 class="w3-text-light-grey">Mes Compétences</h2>
-        <hr class="w3-opacity trait">
-        <div id="lang"><h3>Langages informatique</h3>
-            <p>Lors de mes études, j'ai pu apprendre de nouveaux langages qui sont les suivants :</p>
-            <div class="lang-desc" id="lang-desc">
-                <div class="lang">
-                    <label for="PHP">PHP</label>
-                    <div id="PHP" class="Progress">
-                        <div id="PHP_Progress" class="Bar"></div>
-                    </div>
-                </div>
-                <div class="desc">
-                    <p>Structure MVC, lien avec base de données PostgresSQL, PHPMyAdmin</p>
-                </div>
-                <div class="lang">
-                    <label for="JS">JavaScript</label>
-                    <div id="JS" class="Progress">
-                        <div id="JS_Progress" class="Bar"></div>
-                    </div>
-                </div>
-                <div class="desc">
-                    <p>Requêtes AJAX, listenner, pages intéractives</p>
-                </div>
-
-                <div class="lang">
-                    <label for="JAVA">Java</label>
-                    <div id="JAVA" class="Progress">
-                        <div id="JAVA_Progress" class="Bar"></div>
-                    </div>
-                </div>
-                <div class="desc">
-                    <p>Différents patterns : Composite, Visiteur, Observeur, Factory, Singleton, Proxy, Iterator</p>
-                </div>
-                <div class="lang">
-                    <label for="HTML">Html/CSS</label>
-                    <div id="HTML" class="Progress">
-                        <div id="HTML_Progress" class="Bar"></div>
-                    </div>
-                </div>
-                <div class="desc">
-                    <p>Site statique, mono page, plusieurs pages</p>
-                </div>
-                <div class="lang">
-                    <label for="SQL">SQL</label>
-                    <div id="SQL" class="Progress">
-                        <div id="SQL_Progress" class="Bar"></div>
-                    </div>
-                </div>
-                <div class="desc">
-                    <p>Diférents SGBD, Oracle, PhpMyadmin, PostgreSQL. Array, hstore, lateral, cross-join</p>
-                </div>
-                <div class="lang">
-                    <label for="C">C</label>
-                    <div id="C" class="Progress">
-                        <div id="C_Progress" class="Bar"></div>
-                    </div>
-                </div>
-                <div class="desc">
-                    <p>Lecture, ecriture fichier, inversion pixel image, socket</p>
-                </div>
-                <div class="lang">
-                    <label for="Py">Python</label>
-                    <div id="Py" class="Progress">
-                        <div id="Py_Progress" class="Bar"></div>
-                    </div>
-                </div>
-                <div class="desc">
-                    <p>Encryptage de messages, cryptographie, réccursivité</p>
-                </div>
-            </div>
-        </div>
-        <div id="outils">
-            <hr class="w3-opacity trait">
-            <div id="outils-desc"><h3>Outils informatique</h3>
-                <p>Lors de mes études, j'ai appris à maîtriser différents outils :</p>
-                <div class="desc-lang" id="desc-lang">
-                    <div class="desc">
-                        <p>Projet réalisé en utilisant les outils GitHub et GitLab</p>
-                    </div>
-                    <div class="lang">
-                        <label for="Git">Git</label>
-                        <div id="Git" class="Progress">
-                            <div id="Git_Progress" class="Bar"></div>
-                        </div>
-                    </div>
-                    <div class="desc">
-                        <p>Utilisation de Canva pour créer des affiches, maquettes, CV, diaporamas</p>
-                    </div>
-                    <div class="lang">
-                        <label for="Canva">Canva</label>
-                        <div id="Canva" class="Progress">
-                            <div id="Canva_Progress" class="Bar"></div>
-                        </div>
-                    </div>
-                    <div class="desc">
-                        <p>Création de maquettes interactives, maquettes non-intéractives</p>
-                    </div>
-                    <div class="lang">
-                        <label for="Fig">Figma</label>
-                        <div id="Fig" class="Progress">
-                            <div id="Fig_Progress" class="Bar"></div>
-                        </div>
-                    </div>
-                    <div class="desc">
-                        <p>Rédaction de rapport de projet, stage, feuille de calculs, diaporama</p>
-                    </div>
-                    <div class="lang">
-                        <label for="Docs">Outils Google</label>
-                        <div id="Docs" class="Progress">
-                            <div id="Docs_Progress" class="Bar"></div>
-                        </div>
-                    </div>
-
-
-                </div>
-            </div>
-        </div>
-        <div id="compPers">
-            <hr class="w3-opacity trait">
-            <div><h3>Qualités personnelles et compétences professionnelles</h3>
-                <table class="Compétences">
-                    <tr>
-                        <td class="diagramme_personnel">
-
-                            <canvas id="personnelle"></canvas>
-                            <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-                        </td>
-                        <td class="desc-comp">
-                            <h4>Qualités personnelles</h4>
-                            <hr class="w3-opacity trait">
-                            <p>Au cours de ma vie, j'ai développé plusieurs qualités personnelles. Je vous présente 4
-                                de mes qualités qui me semblent assez importantes.</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="desc-comp">
-                            <h4>Compétences professionnelles</h4>
-                            <hr class="w3-opacity trait">
-                            <p>Au fils de mes expériences, j'ai découvert que j'aimais acquérir de nouvelles
-                                connaissances dans différents domaines, de plus, cela m'a permis de développer différentes
-                                compétences professionnelles.</p>
-                        </td>
-                        <td class="diagramme_personnel">
-                            <canvas id="professionnel"></canvas>
-                        </td>
-                    </tr>
-                </table>
-
-            </div>
-        </div>
+    <div class="btn-home" id="btn-home">
+        <img src="https://cdn.discordapp.com/attachments/782961560061476894/1093527644345225346/black-arrow-up.png">
     </div>
-    <div>
-        <div class="w3-content w3-justify w3-text-grey w3-padding-64 fondBlanc" id="proj">
-            <h2 class="w3-text-light-grey">Mes Projets</h2>
+
+    <div class="w3-padding-large" id="main">
+        <!-- Header/Home -->
+        <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+            <h1 class="w3-jumbo"><span class="w3-hide-small"></span>Bonjour, je suis Gaëtan Da Costa.</h1>
+            <p>Étudiant en informatique</p>
+            <img src="https://cdn.discordapp.com/attachments/782961560061476894/1093527643829321758/gaetan.jpg"
+                alt="gaetan" class="w3-image gaetan">
+        </header>
+        <div class="w3-content w3-justify w3-text-grey w3-padding-64 fondBlanc" id="about">
+            <h2 class="w3-text-light-grey">À propos de moi</h2>
+            <hr class="w3-opacity trait">
+            <p>Bonjour et bienvenue sur mon portfolio, je suis Gaëtan Da Costa et je vais vous détailler différents
+                aspects de ma vie personnelles et professionnelles, mes compétences et aussi différentes expériences
+                dans le monde du travail que j'ai eu. Je suis étudiant en 3eme année en BUT informatique en parcours Réalisation 
+                d'Application Conception, Developpement, Validation (RACDV). Et
+                depuis mon plus jeune âge, je me suis tourné vers ce domaine, car j'aimais bien essayer de
+                comprendre comment un jeu fonctionnait, en effet, j'essayais de trouver différents bugs et c'est ainsi
+                que je me suis dit "et pourquoi je ne ferais pas des jeux moi aussi". J'ai l'esprit compétiteur mais
+                aussi coopératif, j'aime me donner à fond dans un projet qui me plaît. Plus tard, j'envisage de
+                travailler dans la conception de logiciels ou applications. J'aime bien le web et les bases de données,
+                de plus j'aime analyser et trouver des solutions à des problèmes complexes.
 
 
-            <div class="total_projet">
-                <hr class="w3-opacity trait">
-                <h3 id="Chocomaps">ChocoMaps</h3>
-                <div class="carrousel2">
-
-                    <div class="diapo active">
-                        <img src="https://cdn.discordapp.com/attachments/782961560061476894/1095383038793371670/image.png">
-                        <p>Page d'accueil</p>
+            </p>
+        </div>
+        <div class="w3-content w3-justify w3-text-grey w3-padding-64 fondGris" id="comp">
+            <h2 class="w3-text-light-grey">Mes Compétences</h2>
+            <hr class="w3-opacity trait">
+            <div id="lang">
+                <h3>Langages informatique</h3>
+                <p>Lors de mes études, j'ai pu apprendre de nouveaux langages qui sont les suivants :</p>
+                <div class="lang-desc" id="lang-desc">
+                    <div class="lang">
+                        <label for="PHP">PHP</label>
+                        <div id="PHP" class="Progress">
+                            <div id="PHP_Progress" class="Bar"></div>
+                        </div>
                     </div>
-                    <div class="diapo">
-                        <img src="https://cdn.discordapp.com/attachments/782961560061476894/1094682525345001533/image.png">
-                        <p>Graphe pour notre algorithme</p>
+                    <div class="desc">
+                        <p>Structure MVC, lien avec base de données PostgresSQL, PHPMyAdmin</p>
+                    </div>
+                    <div class="lang">
+                        <label for="JS">JavaScript</label>
+                        <div id="JS" class="Progress">
+                            <div id="JS_Progress" class="Bar"></div>
+                        </div>
+                    </div>
+                    <div class="desc">
+                        <p>Requêtes AJAX, listenner, pages intéractives</p>
                     </div>
 
-                    <button class="btn-carrousel prev">Précédent</button>
-                    <button class="btn-carrousel next">Suivant</button>
+                    <div class="lang">
+                        <label for="JAVA">Java</label>
+                        <div id="JAVA" class="Progress">
+                            <div id="JAVA_Progress" class="Bar"></div>
+                        </div>
+                    </div>
+                    <div class="desc">
+                        <p>Différents patterns : Composite, Visiteur, Observeur, Factory, Singleton, Proxy, Iterator</p>
+                    </div>
+                    <div class="lang">
+                        <label for="HTML">Html/CSS</label>
+                        <div id="HTML" class="Progress">
+                            <div id="HTML_Progress" class="Bar"></div>
+                        </div>
+                    </div>
+                    <div class="desc">
+                        <p>Site statique, mono page, plusieurs pages</p>
+                    </div>
+                    <div class="lang">
+                        <label for="SQL">SQL</label>
+                        <div id="SQL" class="Progress">
+                            <div id="SQL_Progress" class="Bar"></div>
+                        </div>
+                    </div>
+                    <div class="desc">
+                        <p>Diférents SGBD, Oracle, PhpMyadmin, PostgreSQL. Array, hstore, lateral, cross-join</p>
+                    </div>
+                    <div class="lang">
+                        <label for="C">C</label>
+                        <div id="C" class="Progress">
+                            <div id="C_Progress" class="Bar"></div>
+                        </div>
+                    </div>
+                    <div class="desc">
+                        <p>Lecture, ecriture fichier, inversion pixel image, socket</p>
+                    </div>
+                    <div class="lang">
+                        <label for="Py">Python</label>
+                        <div id="Py" class="Progress">
+                            <div id="Py_Progress" class="Bar"></div>
+                        </div>
+                    </div>
+                    <div class="desc">
+                        <p>Encryptage de messages, cryptographie, réccursivité</p>
+                    </div>
                 </div>
-                <p class="desc-projet">Le projet consistait à optimiser une base de données et des algorithmes afin de pouvoir avoir une application qui peut calculer différents trajets en France, en quelques secondes</p>
-
             </div>
-            <div class="total_projet">
+            <div id="outils">
                 <hr class="w3-opacity trait">
-                <h3 id="CGJ">Code Game Jam 2023</h3>
-                <div class="carrousel2">
+                <div id="outils-desc">
+                    <h3>Outils informatique</h3>
+                    <p>Lors de mes études, j'ai appris à maîtriser différents outils :</p>
+                    <div class="desc-lang" id="desc-lang">
+                        <div class="desc">
+                            <p>Projet réalisé en utilisant les outils GitHub et GitLab</p>
+                        </div>
+                        <div class="lang">
+                            <label for="Git">Git</label>
+                            <div id="Git" class="Progress">
+                                <div id="Git_Progress" class="Bar"></div>
+                            </div>
+                        </div>
+                        <div class="desc">
+                            <p>Utilisation de Canva pour créer des affiches, maquettes, CV, diaporamas</p>
+                        </div>
+                        <div class="lang">
+                            <label for="Canva">Canva</label>
+                            <div id="Canva" class="Progress">
+                                <div id="Canva_Progress" class="Bar"></div>
+                            </div>
+                        </div>
+                        <div class="desc">
+                            <p>Création de maquettes interactives, maquettes non-intéractives</p>
+                        </div>
+                        <div class="lang">
+                            <label for="Fig">Figma</label>
+                            <div id="Fig" class="Progress">
+                                <div id="Fig_Progress" class="Bar"></div>
+                            </div>
+                        </div>
+                        <div class="desc">
+                            <p>Rédaction de rapport de projet, stage, feuille de calculs, diaporama</p>
+                        </div>
+                        <div class="lang">
+                            <label for="Docs">Outils Google</label>
+                            <div id="Docs" class="Progress">
+                                <div id="Docs_Progress" class="Bar"></div>
+                            </div>
+                        </div>
 
-                    <div class="diapo active">
-                        <img src="https://cdn.discordapp.com/attachments/782961560061476894/1094647796558221352/20230124_131642.png">
-                        <p>Notre équipe</p>
-                    </div>
-                    <div class="diapo">
-                        <img src="https://cdn.discordapp.com/attachments/894639303827808378/1094647233066061844/image.png">
-                        <p>Moi en train de travailler</p>
-                    </div>
 
-                    <button class="btn-carrousel prev">Précédent</button>
-                    <button class="btn-carrousel next">Suivant</button>
+                    </div>
                 </div>
-                <p class="desc-projet">J'ai participé à la Code Game Jam 2023, le but est très simple : nous avons un thème (cette année, c'était "maître du temps") et nous devons concevoir un jeu en 24h (brainstorm non compris) en respectant ce thème.
-                Ce fut une superbe expérience !</p>
-
             </div>
-
-            <div class="total_projet">
+            <div id="compPers">
                 <hr class="w3-opacity trait">
-                <h3 id="Chocolask">Chocolask</h3>
-                <div class="carrousel2">
+                <div>
+                    <h3>Qualités personnelles et compétences professionnelles</h3>
+                    <table class="Compétences">
+                        <tr>
+                            <td class="diagramme_personnel">
 
-                    <div class="diapo active">
-                        <img src="https://cdn.discordapp.com/attachments/782961560061476894/1093527642109661245/questions-chocolask.jpg">
-                        <p>Page d'accueil</p>
-                    </div>
-                    <div class="diapo">
-                        <img src="https://cdn.discordapp.com/attachments/782961560061476894/1093527642977878046/login-chocolask.jpg">
-                        <p>Page de connextion</p>
-                    </div>
-                    <div class="diapo">
-                        <img src="https://cdn.discordapp.com/attachments/782961560061476894/1093527642361315459/profil-chocolask.jpg">
-                        <p>Page de profil</p>
-                    </div>
-                    <div class="diapo">
-                        <img src="https://cdn.discordapp.com/attachments/782961560061476894/1093527643233714236/home-chocolask.jpg">
-                        <p>Page des Questions</p>
-                    </div>
-                    <div class="diapo">
-                        <img src="https://cdn.discordapp.com/attachments/894639303827808378/1092704817014644756/image.png">
-                        <p>Page admin pour voir les utilisateurs</p>
-                    </div>
-                    <div class="diapo">
-                        <img src="https://cdn.discordapp.com/attachments/782961560061476894/1093527644114518036/create-chocolask.jpg">
-                        <p>Page de création de question</p>
-                    </div>
-                    <button class="btn-carrousel prev">Précédent</button>
-                    <button class="btn-carrousel next">Suivant</button>
+                                <canvas id="personnelle"></canvas>
+                                <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+                            </td>
+                            <td class="desc-comp">
+                                <h4>Qualités personnelles</h4>
+                                <hr class="w3-opacity trait">
+                                <p>Au cours de ma vie, j'ai développé plusieurs qualités personnelles. Je vous présente
+                                    4
+                                    de mes qualités qui me semblent assez importantes.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="desc-comp">
+                                <h4>Compétences professionnelles</h4>
+                                <hr class="w3-opacity trait">
+                                <p>Au fils de mes expériences, j'ai découvert que j'aimais acquérir de nouvelles
+                                    connaissances dans différents domaines, de plus, cela m'a permis de développer
+                                    différentes
+                                    compétences professionnelles.</p>
+                            </td>
+                            <td class="diagramme_personnel">
+                                <canvas id="professionnel"></canvas>
+                            </td>
+                        </tr>
+                    </table>
+
                 </div>
-                <p class="desc-projet">Le but de ce projet était de créer un site web dynamique en php, html, css et un
-                    peu de JavaScript. Ce site est un endroit où les utilisateurs peuvent se créer un compte ou se
-                    connecter afin de poser des questions, de proposer des réponses et de voter pour les réponses qu'ils
-                    préfèrent.</p>
-            </div>
-            <div class="total_projet">
-                <hr class="w3-opacity trait">
-                <h3 id="AVD">Aventuriers du Rails Europe</h3>
-                <div class="carrousel2">
-
-                    <div class="diapo active">
-                        <img src="https://cdn.discordapp.com/attachments/894639303827808378/1095390832661626920/image.png">
-                        <p>Maquette du Projet</p>
-                    </div>
-                    <div class="diapo">
-                        <img src="https://cdn.discordapp.com/attachments/782961560061476894/1093616417603067945/interFaceFinale-AVD.jpg">
-                        <p>Interface finale</p>
-                    </div>
-
-                    <button class="btn-carrousel prev">Précédent</button>
-                    <button class="btn-carrousel next">Suivant</button>
-                </div>
-                <p class="desc-projet">Nous devions créer le jeu de société "Les Aventuriers du Rails Europe" en JAVA en
-                    Binôme. Le projet était divisé en 3 partie :</p>
-                <ul>
-                    <li>Le code</li>
-                    <li>Les graphes</li>
-                    <li>L'interface</li>
-                </ul>
-                <p class="desc-projet">Pour la partie code, nous avions une interface fonctionnelle et nous devions faire le
-                    code du jeu en prenant en compte les règles du jeu et des tests qui nous ont été fournis. Pour la
-                    partie graphe, nous devions utiliser différents algorithmes afin de calculer le court trajet, le plus
-                    long, etc. Enfin, pour la partie de l'interface, nous avions un code fonctionnel et on devait
-                    réaliser l'interface fonctionnelle du jeu. Cela va être difficile de vous illustrer le code donc je
-                    ne vous montre que la partie de l'interface.</p>
             </div>
         </div>
-        <div class="w3-content w3-justify w3-text-grey w3-padding-64 fondGris" id="jobs">
-            <h2 class="w3-text-light-grey">Mes expériences professionnelles</h2>
-            <div class="exps">
-                <hr class="w3-opacity trait">
-                <h3 id="ete_2023">été 2023</h3>
-                <div class="desc-lang">
-                    
-                    <div class="lang">
-                        <p>Lors de ce job d'été, j'ai pu gagner beaucoup d'expériences personnelles. En effet, je devais accueillir les clients, tenir le bar, aller en service le soir et en cuisine en fin de saison.
-                            J'ai aussi amélioré mes compétences en travail en équipe et communication.<p>
-                    </div>
-                    <div class="desc">
-                        <img class="ete" src="https://cdn.discordapp.com/attachments/782961560061476894/1145323855246790729/IMG_20230826_215917.jpg">
-                    </div>
+        <div>
+            <div class="w3-content w3-justify w3-text-grey w3-padding-64 fondBlanc" id="proj">
+                <h2 class="w3-text-light-grey">Mes Projets</h2>
 
-                        
-                    <div class="desc">
-                        <img class="ete" src="https://cdn.discordapp.com/attachments/782961560061476894/1145323855884320828/IMG_20230825_185249.jpg">
-                    </div>
-                    <div class="lang">
-                        <p>J'en retiens une expérience incroyable et mon plus bel été. J'ai pu rencontrer des gens merveilleux, vous pouvez voir notre équipe sur cette photo. L'équipe n'est pas complète, car c'était la fin de saison.</p>
-                    </div>
-                </div>
-                <hr class="w3-opacity trait">
-                <h3 id="stage_chrtec">Stage chronotech</h3>
-                <div class="desc-lang">
-                    <div class="lang">
-                        <p>J'ai effectué mon stage de fin d'année dans la société chronotech basé à pont saint esprit. La société développe des logiciels et applications pour des laboratoires d'œnologie. Ma mission était donc de développer une application en Delphi. Le stage s'est bien passé et je vais faire mon alternance dans la même société.</p>
 
+                <div class="total_projet">
+                    <hr class="w3-opacity trait">
+                    <h3 id="Chocomaps">ChocoMaps</h3>
+                    <div class="carrousel2">
+
+                        <div class="diapo active">
+                            <img
+                                src="https://cdn.discordapp.com/attachments/782961560061476894/1095383038793371670/image.png">
+                            <p>Page d'accueil</p>
                         </div>
-                    <div class="desc">
-                        <img class="ete" src="https://cdn.discordapp.com/attachments/782961560061476894/1145333665879048324/chrtec.png">
-                    </div>
-                </div>
-                <hr class="w3-opacity trait">
-                <h3 id="ete_2022">été 2022</h3>
-                <div class="desc-lang">
-                    <div class="desc">
-                    <img class="ete" src="https://cdn.discordapp.com/attachments/782961560061476894/1094645839915405332/20220803_185618007.jpg">
-                </div>
-                    <div class="lang">
-                        <p>Lors de ce job d'été, j'étais chargé de préparer différents plats comme des pizzas, burgers, frites, etc. J'étais donc amené à travailler en équipe. De plus, le week-end, je devais nettoyer les bungalows en binômes.</p>
-                    </div>
+                        <div class="diapo">
+                            <img
+                                src="https://cdn.discordapp.com/attachments/782961560061476894/1094682525345001533/image.png">
+                            <p>Graphe pour notre algorithme</p>
+                        </div>
 
+                        <button class="btn-carrousel prev">Précédent</button>
+                        <button class="btn-carrousel next">Suivant</button>
+                    </div>
+                    <p class="desc-projet">Le projet consistait à optimiser une base de données et des algorithmes afin
+                        de pouvoir avoir une application qui peut calculer différents trajets en France, en quelques
+                        secondes</p>
+
+                </div>
+                <div class="total_projet">
+                    <hr class="w3-opacity trait">
+                    <h3 id="CGJ">Code Game Jam 2023</h3>
+                    <div class="carrousel2">
+
+                        <div class="diapo active">
+                            <img
+                                src="https://cdn.discordapp.com/attachments/782961560061476894/1094647796558221352/20230124_131642.png">
+                            <p>Notre équipe</p>
+                        </div>
+                        <div class="diapo">
+                            <img
+                                src="https://cdn.discordapp.com/attachments/894639303827808378/1094647233066061844/image.png">
+                            <p>Moi en train de travailler</p>
+                        </div>
+
+                        <button class="btn-carrousel prev">Précédent</button>
+                        <button class="btn-carrousel next">Suivant</button>
+                    </div>
+                    <p class="desc-projet">J'ai participé à la Code Game Jam 2023, le but est très simple : nous avons
+                        un thème (cette année, c'était "maître du temps") et nous devons concevoir un jeu en 24h
+                        (brainstorm non compris) en respectant ce thème.
+                        Ce fut une superbe expérience !</p>
+
+                </div>
+
+                <div class="total_projet">
+                    <hr class="w3-opacity trait">
+                    <h3 id="Chocolask">Chocolask</h3>
+                    <div class="carrousel2">
+
+                        <div class="diapo active">
+                            <img
+                                src="https://cdn.discordapp.com/attachments/782961560061476894/1093527642109661245/questions-chocolask.jpg">
+                            <p>Page d'accueil</p>
+                        </div>
+                        <div class="diapo">
+                            <img
+                                src="https://cdn.discordapp.com/attachments/782961560061476894/1093527642977878046/login-chocolask.jpg">
+                            <p>Page de connextion</p>
+                        </div>
+                        <div class="diapo">
+                            <img
+                                src="https://cdn.discordapp.com/attachments/782961560061476894/1093527642361315459/profil-chocolask.jpg">
+                            <p>Page de profil</p>
+                        </div>
+                        <div class="diapo">
+                            <img
+                                src="https://cdn.discordapp.com/attachments/782961560061476894/1093527643233714236/home-chocolask.jpg">
+                            <p>Page des Questions</p>
+                        </div>
+                        <div class="diapo">
+                            <img
+                                src="https://cdn.discordapp.com/attachments/894639303827808378/1092704817014644756/image.png">
+                            <p>Page admin pour voir les utilisateurs</p>
+                        </div>
+                        <div class="diapo">
+                            <img
+                                src="https://cdn.discordapp.com/attachments/782961560061476894/1093527644114518036/create-chocolask.jpg">
+                            <p>Page de création de question</p>
+                        </div>
+                        <button class="btn-carrousel prev">Précédent</button>
+                        <button class="btn-carrousel next">Suivant</button>
+                    </div>
+                    <p class="desc-projet">Le but de ce projet était de créer un site web dynamique en php, html, css et
+                        un
+                        peu de JavaScript. Ce site est un endroit où les utilisateurs peuvent se créer un compte ou se
+                        connecter afin de poser des questions, de proposer des réponses et de voter pour les réponses
+                        qu'ils
+                        préfèrent.</p>
+                </div>
+                <div class="total_projet">
+                    <hr class="w3-opacity trait">
+                    <h3 id="AVD">Aventuriers du Rails Europe</h3>
+                    <div class="carrousel2">
+
+                        <div class="diapo active">
+                            <img
+                                src="https://cdn.discordapp.com/attachments/894639303827808378/1095390832661626920/image.png">
+                            <p>Maquette du Projet</p>
+                        </div>
+                        <div class="diapo">
+                            <img
+                                src="https://cdn.discordapp.com/attachments/782961560061476894/1093616417603067945/interFaceFinale-AVD.jpg">
+                            <p>Interface finale</p>
+                        </div>
+
+                        <button class="btn-carrousel prev">Précédent</button>
+                        <button class="btn-carrousel next">Suivant</button>
+                    </div>
+                    <p class="desc-projet">Nous devions créer le jeu de société "Les Aventuriers du Rails Europe" en
+                        JAVA en
+                        Binôme. Le projet était divisé en 3 partie :</p>
+                    <ul>
+                        <li>Le code</li>
+                        <li>Les graphes</li>
+                        <li>L'interface</li>
+                    </ul>
+                    <p class="desc-projet">Pour la partie code, nous avions une interface fonctionnelle et nous devions
+                        faire le
+                        code du jeu en prenant en compte les règles du jeu et des tests qui nous ont été fournis. Pour
+                        la
+                        partie graphe, nous devions utiliser différents algorithmes afin de calculer le court trajet, le
+                        plus
+                        long, etc. Enfin, pour la partie de l'interface, nous avions un code fonctionnel et on devait
+                        réaliser l'interface fonctionnelle du jeu. Cela va être difficile de vous illustrer le code donc
+                        je
+                        ne vous montre que la partie de l'interface.</p>
+                </div>
+            </div>
+            <div class="w3-content w3-justify w3-text-grey w3-padding-64 fondGris" id="jobs">
+                <h2 class="w3-text-light-grey">Mes expériences professionnelles</h2>
+                <div class="exps">
+                    <hr class="w3-opacity trait">
+                    <h3 id="ete_2023">été 2023</h3>
+                    <div class="desc-lang">
 
                         <div class="lang">
-                            <p>J'en retiens une expérience incroyable. Vous pouvez voir notre équipe sur cette photo.</p>
+                            <p>Lors de ce job d'été, j'ai pu gagner beaucoup d'expériences personnelles. En effet, je
+                                devais accueillir les clients, tenir le bar, aller en service le soir et en cuisine en
+                                fin de saison.
+                                J'ai aussi amélioré mes compétences en travail en équipe et communication.
+                            <p>
                         </div>
-                    <div class="desc">
-                        <img class="ete" src="https://cdn.discordapp.com/attachments/782961560061476894/1094645840309665974/IMG_20220805_000012.jpg">
-                    </div>
+                        <div class="desc">
+                            <img class="ete"
+                                src="https://cdn.discordapp.com/attachments/782961560061476894/1145323855246790729/IMG_20230826_215917.jpg">
+                        </div>
 
-                </div>
-                <div>
+
+                        <div class="desc">
+                            <img class="ete"
+                                src="https://cdn.discordapp.com/attachments/782961560061476894/1145323855884320828/IMG_20230825_185249.jpg">
+                        </div>
+                        <div class="lang">
+                            <p>J'en retiens une expérience incroyable et mon plus bel été. J'ai pu rencontrer des gens
+                                merveilleux, vous pouvez voir notre équipe sur cette photo. L'équipe n'est pas complète,
+                                car c'était la fin de saison.</p>
+                        </div>
+                    </div>
                     <hr class="w3-opacity trait">
-                    <h3 id="Interim">Intérim</h3>
+                    <h3 id="stage_chrtec">Stage chronotech</h3>
+                    <div class="desc-lang">
+                        <div class="lang">
+                            <p>J'ai effectué mon stage de fin d'année dans la société chronotech basé à pont saint
+                                esprit. La société développe des logiciels et applications pour des laboratoires
+                                d'œnologie. Ma mission était donc de développer une application en Delphi. Le stage
+                                s'est bien passé et je vais faire mon alternance dans la même société.</p>
+
+                        </div>
+                        <div class="desc">
+                            <img class="ete"
+                                src="https://cdn.discordapp.com/attachments/782961560061476894/1145333665879048324/chrtec.png">
+                        </div>
+                    </div>
+                    <hr class="w3-opacity trait">
+                    <h3 id="ete_2022">été 2022</h3>
                     <div class="desc-lang">
                         <div class="desc">
-                            <img src="https://cdn.discordapp.com/attachments/782961560061476894/1094643145150582834/triangle.jpg">
+                            <img class="ete"
+                                src="https://cdn.discordapp.com/attachments/782961560061476894/1094645839915405332/20220803_185618007.jpg">
                         </div>
                         <div class="lang">
-                            <p>Je suis inscrit à l'intérim de Sainte-Cécile-les-Vignes, j'y fais ma seule mission en tant qu'opérateur de production dans une usine. Cette mission, s'est très bien passé et mon responsable m'a félicité pour mes efforts fournis.</p>
+                            <p>Lors de ce job d'été, j'étais chargé de préparer différents plats comme des pizzas,
+                                burgers, frites, etc. J'étais donc amené à travailler en équipe. De plus, le week-end,
+                                je devais nettoyer les bungalows en binômes.</p>
                         </div>
-                    </div>
 
+
+                        <div class="lang">
+                            <p>J'en retiens une expérience incroyable. Vous pouvez voir notre équipe sur cette photo.
+                            </p>
+                        </div>
+                        <div class="desc">
+                            <img class="ete"
+                                src="https://cdn.discordapp.com/attachments/782961560061476894/1094645840309665974/IMG_20220805_000012.jpg">
+                        </div>
+
+                    </div>
+                    <div>
+                        <hr class="w3-opacity trait">
+                        <h3 id="Interim">Intérim</h3>
+                        <div class="desc-lang">
+                            <div class="desc">
+                                <img
+                                    src="https://cdn.discordapp.com/attachments/782961560061476894/1094643145150582834/triangle.jpg">
+                            </div>
+                            <div class="lang">
+                                <p>Je suis inscrit à l'intérim de Sainte-Cécile-les-Vignes, j'y fais ma seule mission en
+                                    tant qu'opérateur de production dans une usine. Cette mission, s'est très bien passé
+                                    et mon responsable m'a félicité pour mes efforts fournis.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <hr class="w3-opacity trait">
+                    <h3 id="été_20202021">été 2020/2021</h3>
+                    <div class="desc-lang">
+                        <div class="lang">
+                            <p>Quand j'ai eu 16 ans, en 2020, je suis allé postuler pour travailler l'été à la mairie de
+                                mon village. J'ai été embauché pour le mois de juillet à mis temps. Cette expérience fut
+                                très enrichissante. Le maire, étant très satisfait de moi, à décider de me reprendre
+                                l'été d'après pendant le mois de juillet.</p>
+                        </div>
+                        <div class="desc">
+                            <img
+                                src="https://cdn.discordapp.com/attachments/782961560061476894/1094644119609024624/cairanne.jpg">
+                        </div>
+
+                    </div>
+                </div>
             </div>
+
+            <div class="w3-content w3-justify w3-text-grey w3-padding-64 fondBlanc" id="me_contacter">
+
+                <h2 class="w3-text-light-grey">Me Contacter</h2>
                 <hr class="w3-opacity trait">
-                <h3 id="été_20202021">été 2020/2021</h3>
-                <div class="desc-lang">
-                    <div class="lang">
-                    <p>Quand j'ai eu 16 ans, en 2020, je suis allé postuler pour travailler l'été à la mairie de mon village. J'ai été embauché pour le mois de juillet à mis temps. Cette expérience fut très enrichissante. Le maire, étant très satisfait de moi, à décider de me reprendre l'été d'après pendant le mois de juillet.</p>
+                <div class="me_contacter">
+                    <p>Vous pouvez me contacter avec différents moyens :</p>
+                    <a id="mail" href="mailto:gaetan.da.costa2003@gmail.com" class="bouton">Envoyez-moi un mail</a>
+                    <a class="bouton" id="copy">Appelez-moi</a>
+                    <a class="bouton" id="link" href="https://www.linkedin.com/in/ga%C3%ABtan-da-costa/"
+                        target="_blank">Visitez mon profil Linkedin</a>
+                    <a class="bouton" id="github" href="https://github.com/gaetandacosta" target="_blank">Visitez mon
+                        profil GitHub</a>
+                    <p>Pour plus d'information sur moi, voici un google drive contenant un carrousel réalisé lors de ma
+                        formation, qui a pour sujet pourquoi et comment je suis arrivé en BUT.</p>
+                    <a class="bouton" target="_blank" id="more"
+                        href="https://drive.google.com/drive/folders/1vb-52d5x5eOebZsLiXFwBvY3jEc7PG5O?usp=sharing">Google
+                        Drive</a>
+                    <p>Vous pouvez aussi télécharger mon CV en cliquant sur le bouton ci-dessous.</p>
+                    <a id="cv" class="bouton" href="Ressources/CV-Gaetan-Da-Costa.pdf"
+                        download="CV-Gaetan-Da-Costa">Télécharger mon CV</a>
                 </div>
-                    <div class="desc">
-                        <img src="https://cdn.discordapp.com/attachments/782961560061476894/1094644119609024624/cairanne.jpg">
-                    </div>
 
-                </div>
             </div>
+            <footer class="footer">
+            </footer>
         </div>
-
-        <div class="w3-content w3-justify w3-text-grey w3-padding-64 fondBlanc" id="me_contacter">
-
-            <h2 class="w3-text-light-grey">Me Contacter</h2>
-            <hr class="w3-opacity trait">
-            <div class="me_contacter">
-                <p>Vous pouvez me contacter avec différents moyens :</p>
-                <a id="mail" href="mailto:gaetan.da.costa2003@gmail.com" class="bouton">Envoyez-moi un mail</a>
-                <a class="bouton" id="copy">Appelez-moi</a>
-                <a class="bouton" id="link" href="https://www.linkedin.com/in/ga%C3%ABtan-da-costa/" target="_blank">Visitez mon profil Linkedin</a>
-                <a class="bouton" id="github" href="https://github.com/gaetandacosta" target="_blank">Visitez mon profil GitHub</a>
-                <p>Pour plus d'information sur moi, voici un google drive contenant un carrousel réalisé lors de ma formation, qui a pour sujet pourquoi et comment je suis arrivé en BUT.</p>
-                <a class="bouton" target="_blank" id="more" href="https://drive.google.com/drive/folders/1vb-52d5x5eOebZsLiXFwBvY3jEc7PG5O?usp=sharing">Google Drive</a>
-            <p>Vous pouvez aussi télécharger mon CV en cliquant sur le bouton ci-dessous.</p>
-            <a id="cv" class="bouton" href="Ressources/CV-Gaetan-Da-Costa.pdf" download="CV-Gaetan-Da-Costa">Télécharger mon CV</a>
-            </div>
-
-        </div>
-        <footer class="footer">
-        </footer>
     </div>
-</div>
 </body>
-</html>
 
+</html>
