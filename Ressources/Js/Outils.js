@@ -1,7 +1,7 @@
 import * as Barre from './Barre.js';
 
 let tabOutils = {
-    "Git" : 97,
+    "Git" : 77,
     "Canva" : 78,
     "Docs" : 96,
     "Fig" : 72,

@@ -8,7 +8,8 @@ let tab = { "PHP" : 73,
     "JAVA" : 88,
     "SQL" : 92,
     "Py" : 86,
-    "C" : 21
+    "C" : 21,
+    "Delphi": 37
 }
 
 let tabDesc = { "PHP" : "Structure MVC, lien avec base de données PostGres, PHPMyAdmin",
@@ -16,7 +17,8 @@ let tabDesc = { "PHP" : "Structure MVC, lien avec base de données PostGres, PHP
     "HTML" : "Site Statique, mono page, plusieurs page",
     "JAVA" : "Différents Pattern : Composite, Visiteur, Observeur, Factory, Singleton, Proxy, Iterator",
     "SQL" : "Diférent SGBD, Oracle, PhpMyadmin, Postgres. Array, hstore, lateral, cross-join",
-    "C" : "Lecture, Ecriture fichier, inversion pixel image"
+    "C" : "Lecture, Ecriture fichier, inversion pixel image",
+    "Delphi": "Application dynamique, plugin"
 }
 /*
 function creerLangage(){
