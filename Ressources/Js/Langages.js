@@ -18,7 +18,8 @@ let tabDesc = { "PHP" : "Structure MVC, lien avec base de données PostGres, PHP
     "JAVA" : "Différents Pattern : Composite, Visiteur, Observeur, Factory, Singleton, Proxy, Iterator",
     "SQL" : "Diférent SGBD, Oracle, PhpMyadmin, Postgres. Array, hstore, lateral, cross-join",
     "C" : "Lecture, Ecriture fichier, inversion pixel image",
-    "Delphi": "Application dynamique, plugin"
+    "Py": "Encryptage de messages, cryptographie, réccursivité",
+    "Delphi": "Application dynamique, pluggin"
 }
 /*
 function creerLangage(){
