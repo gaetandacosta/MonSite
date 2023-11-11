@@ -32,13 +32,13 @@
     opacity: 1;
     padding-top: 5%;
     padding-bottom: 5%;
-    background: #E8EDDF;
+    background: linear-gradient(180deg, rgba(207,219,213,1) 0%, rgba(232,237,223,1) 100%); 
 }
 .fondGris{
-    opacity: 0.90;
+    opacity: .90;
     padding-top: 5%;
     padding-bottom: 5%;
-    background: #CFDBD5;
+    background: linear-gradient(0deg, rgba(207,219,213,1) 0%, rgba(232,237,223,1) 100%);
 }
 .lang-desc{
     display: grid;
