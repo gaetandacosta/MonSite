@@ -3,6 +3,7 @@ main{
     width: 65%;
     margin-left: 5%;
     border-radius: 20px;
+    
 }
 .Photo_cliquable{
     display: flex;
@@ -90,4 +91,27 @@ main{
     transition: 500ms;
     transform: scale(120%);
     background-color: #242423;
+}
+
+.btn-home:hover svg{
+    transition: 500ms;
+    transform: scale(120%);
+    fill: #F5CB5C;
+}
+
+.btn-home svg{
+    transform: scale(120%);
+    fill: #242423;
+    display: flex;
+    align-self: center;
+}
+
+.lecture_bar{
+    height: 10px;
+    left: 15%;
+    position: fixed;
+    background-color: red;
+    top: 0px;
+    right: 0px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
