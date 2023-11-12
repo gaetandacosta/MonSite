@@ -110,8 +110,9 @@ main{
     height: 10px;
     left: 15%;
     position: fixed;
-    background-color: red;
+    background-color: #F5CB5C;
     top: 0px;
     right: 0px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 4;
 }
