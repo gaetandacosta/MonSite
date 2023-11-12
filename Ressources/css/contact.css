@@ -1,243 +1,142 @@
-.main_back {
-    position: absolute;
-    border-radius: 10px;
-    transform: rotate(90deg);
-    width: auto;
-    max-width: 11em;
-    height: 11em;
-    background: linear-gradient(270deg, #F5CB5C, #242423);
-    z-index: -2;
-    box-shadow: inset 0px 0px 10px 5px #242423;
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 1%;
+  height: 50%;
 }
 
-.main_contact {
-    display: flex;
-    flex-wrap: wrap;
-    width: auto;
-    width: 100%;
-    max-height: 14em;
-    align-items: center;
-    justify-content: center;
-    z-index: -1;
-    background: radial-gradient(circle, rgba(114,114,111,1) 0%, rgba(51,53,51,1) 30%, rgba(36,36,35,1) 45%, rgba(36,36,35,1) 100%);
+.up {
+  display: flex;
+  flex-direction: row;
+  gap: 1%;
+  padding-bottom: 1%;
+  height: 40%;
 }
 
-
-svg {
-    scale: 1.50;
+.between {
+  display: flex;
+  flex-direction: row;
+  height: 20%;
+  gap: 1%;
+  padding-bottom: 1% 0px;
 }
 
-.card {
-    width: 100%;
-    height: 100%;
-    transition: .4s ease-in-out, .2s background-color ease-in-out, .2s background-image ease-in-out;
-    border: 1px solid transparent;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.main_contact a {
-    width: 46%;
-    height: 46%;
-    margin: 2%;
+.down {
+  display: flex;
+  flex-direction: row;
+  gap: 1%;
+  padding-top: 1%;
+  height: 40%;
 }
 
 
 
 #linkedin {
-    fill: #125fe2;
-    scale: 2;
+  fill: #125fe2;
+  scale: 2;
 }
 
 #github {
-    fill: #9b31f2;
-    scale: 2;
+  fill: #9b31f2;
+  scale: 2;
 }
 
 #call {
-    fill: #29bc4b
+  fill: #29bc4b
 }
 
 #mail {
-    fill: #5a90ed
-}
-
-.card #linkedin {
-    opacity: 0;
-    transition: .2s ease-in-out;
-    fill: #125fe2
+  fill: #5a90ed
 }
 
 
-.card #github {
-    opacity: 0;
-    transition: .2s ease-in-out;
-    fill: #9b31f2;
+#drive {
+  fill: #EA0909
 }
 
-
-.card #cv {
-    opacity: 0;
-    transition: .2s ease-in-out;
-    color: #E8EDDF;
+.button_contact {
+  width: 100%;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 5px 5px 5px 5px;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  display: flex;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: .2s ease-in-out;
 }
 
-
-
-
-.card #call {
-    opacity: 0;
-    transition: .2s ease-in-out;
-    fill: #29bc4b;
+.button_contact svg {
+  scale: 200%;
 }
 
-
-.card #mail {
-    opacity: 0;
-    transition: .2s ease-in-out;
-    fill: #5a90ed;
+.contact_HG {
+  border-radius: 90px 5px 5px 5px;
+  padding-left: 10%;
+  padding-top: 4%;
 }
 
-.card #drive {
-    opacity: 0;
-    transition: .2s ease-in-out;
-   
+.contact_HD {
+  border-radius: 5px 90px 5px 5px;
+  padding-right: 10%;
+  padding-top: 4%;
 }
 
-.main_contact:hover {
-    max-width: 14em;
-    cursor: pointer;
+.contact_BG {
+  border-radius: 5px 5px 5px 90px;
+  padding-left: 10%;
+  padding-bottom: 4%;
 }
 
-.main_contact:hover .main_back {
-    opacity: 0;
+.contact_BD {
+  border-radius: 5px 5px 90px 5px;
+  padding-right: 10%;
+  padding-bottom: 4%;
 }
 
-.main_contact:hover .card {
-    margin: 2%;
-    border-radius: 10px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    background: rgba(255, 255, 255, 0.2);
+.button_contact:hover{
+  transition-duration: 100ms;
+  transform: scale(1.10);
 }
-.main_contact:hover a {
-    width: 40%;
-    height: 40%;
+
+.contact{
+  width: 240px;
+  height: 240px;
 }
 
 
 
-.main_contact:hover .text {
-    opacity: 0;
-    z-index: -3;
+.contact a:hover path {
+  fill: white;
+}
+.contact a:hover p {
+  color: white;
 }
 
-.main_contact:hover #linkedin {
-    opacity: 1;
-    transform: scale(1.20);
+.up a:nth-child(1):hover {
+    background-color: #125fe2;
 }
 
-.main_contact:hover #github {
-    opacity: 1;
+.up a:nth-child(2):hover {
+  background-color: #9b31f2;
 }
 
-.main_contact:hover #call {
-    opacity: 1;
+.between a:nth-child(1):hover {
+  background-color: #ffba24;
 }
 
-.main_contact:hover #mail {
-    opacity: 1;
+.down a:nth-child(1):hover {
+  background-color: #29bc4b;
 }
 
-.main_contact:hover #drive {
-    opacity: 1;
+.down a:nth-child(2):hover {
+background-color: #5a90ed;
 }
 
-.main_contact:hover #cv {
-    opacity: 1;
-    color: #E8EDDF
-}
-
-a:nth-child(1) .card:hover {
-    background-color: #125fe2
-}
-
- a:nth-child(1):hover #linkedin {
-    fill: white;
-}
-
-a:nth-child(2) .card:hover {
-    background-color: #9b31f2;
-}
-
-a:nth-child(2) .card:hover #github {
-    fill: white;
-}
-
-a:nth-child(3) .card:hover {
-    background-color: #29bc4b;
-}
-
-a:nth-child(3) .card:hover #call {
-    fill: white;
-}
-
-a:nth-child(4) .card:hover {
-    background-color: #5a90ed;
-}
-
-a:nth-child(4) .card:hover #mail {
-    fill: white;
-}
-
-a:nth-child(5) .card:hover {
-    background-color: #F5CB5C;
-}
-
-a:nth-child(5) .card:hover #drive path {
-    fill: white;
-}
-
-a:nth-child(6) .card:hover {
-    background-color: #F5CB5C;
-}
-
-a:nth-child(6) .card:hover #cv {
-    color: #242423;
+.down a:nth-child(3):hover {
+background-color: #EA0909;
 }
 
 
-
-
-.main_contact a:nth-child(3) {
-    width: 25%; 
-    height: 33%;
-
-}
-.main_contact a:nth-child(4) {
-    width: 25%;
-    height: 33%;
-}
-.main_contact a:nth-child(5) {
-    width: 25%;
-    height: 33%;
-}
-
-.main_contact a:nth-child(6) {
-    width: 90%;
-    height: 15%;
-}
-
-
-
-.text {
-    position: absolute;
-    font-size: 0.7em;
-    transition: .4s ease-in-out;
-    color: white;
-    text-align: center;
-    font-weight: bold;
-    letter-spacing: 0.33em;
-    z-index: 3;
-}
