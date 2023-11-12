@@ -11,7 +11,7 @@ let scroll = () => {
     const percentage = Math.floor((position / trackLenght) * 100);
     
 
-    barre_lecture.style.right = 85 - percentage + "%"
+    barre_lecture.style.right = 90 - percentage + "%"
 }
 
 window.addEventListener('scroll', scroll);
