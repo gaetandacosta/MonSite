@@ -13,7 +13,7 @@
 .up {
   display: flex;
   flex-direction: row;
-  gap: 1%;
+  gap: 3%;
   padding-bottom: 1%;
   height: 40%;
 }
@@ -23,13 +23,13 @@
   flex-direction: row;
   height: 20%;
   gap: 1%;
-  padding-bottom: 1% 0px;
+  padding: .5% 0px;
 }
 
 .down {
   display: flex;
   flex-direction: row;
-  gap: 1%;
+  gap: 1.5%;
   padding-top: 1%;
   height: 40%;
 }
