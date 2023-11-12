@@ -8,7 +8,7 @@ let scroll = () => {
     const position = window.pageYOffset;
 
     const trackLenght = height - windowHeight;
-    const percentage = Math.floor((position / trackLenght) * 100);
+    const percentage = Math.floor((position / trackLenght) * 85);
     
 
     barre_lecture.style.right = 100 - percentage + "%"
