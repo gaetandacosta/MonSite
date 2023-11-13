@@ -80,13 +80,13 @@
   filter: drop-shadow(0 0 23px var(#F5CB5C));  
 }
 
-.t {
+.list-button {
   display: flex;
   flex-direction: column;
 }
 
 
-  .total{
+  .total-button{
     display: -webkit-box;
     width: 250px;
     z-index: 3;
@@ -98,4 +98,15 @@
     transition-duration: 750ms;
     z-index: 3;
     left: 0%;
+}
+
+.sous-menu p:hover{
+  transition-duration: 500ms;
+  color:#242423;
+  background-color: #F5CB5C;
+}
+
+.sous-menu p{
+  transition-duration: 500ms;
+  margin: 2%;
 }
