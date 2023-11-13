@@ -71,7 +71,7 @@
 
 /* Ajoutez ces styles pour que l'animation sur le bouton reste active lors du survol du sous-menu */
 .button:hover  .hover-text,
-.sous-menu:hover ~ .button .hover-text {
+.sous-menu:hover ~ .button .hover-text{
     width: 100%;
     filter: drop-shadow(0 0 23px var(--animation-color));
 }
