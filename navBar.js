@@ -5,7 +5,8 @@ let listHoverText = bar.querySelectorAll('.hover-text');
 
 for (let index = 0; index < listBouton.length; index++) {
     listSousMenu[index].addEventListener('mouseover', () => {
-        listHoverText[index].style.color = 'red';
+        listHoverText[index].style.color = 'green';
+        console.log('Déclenché');
     })
 
 }
