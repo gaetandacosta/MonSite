@@ -4,10 +4,14 @@ let listSousMenu = bar.querySelectorAll('.sous-menu');
 let listHoverText = bar.querySelectorAll('.hover-text');
 
 for (let index = 0; index < listBouton.length; index++) {
-    listSousMenu[index].addEventListener('mouseover', () => {
-        listHoverText[index].style.width= '100%';
-        listHoverText[index].style.filter= 'drop-shadow(0 0 23px #F5CB5C)';
-        console.log('Déclenché');
-    })
+    listSousMenu[index]
+    .addEventListener('mouseover', () => 
+        listHoverText[index].classList.add('hover-js'))
+
+        
+    listSousMenu[index]
+    .addEventListener('mouseleave', () => 
+        listHoverText[index].classList.remove('hover-js'))
+
 
 }

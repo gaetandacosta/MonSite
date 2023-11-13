@@ -76,6 +76,11 @@
     filter: drop-shadow(0 0 23px var(--animation-color));
 }
 
+.hover-js{
+  width: 100%;
+  filter: drop-shadow(0 0 23px var(#F5CB5C));  
+}
+
 
 
   .total{
