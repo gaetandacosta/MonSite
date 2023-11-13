@@ -6,12 +6,12 @@ for (let index = 0; index < listSousMenu.length; index++) {
     listSousMenu[index]
     .addEventListener('mouseover', () => {
         listHoverText[index].classList.add('hover-js');
-        listHoverText[index].style.zIndex = "3";
+        listSousMenu[index].style.zIndex = "3";
     })
     listSousMenu[index]
     .addEventListener('mouseleave', () => {
-        listHoverText[index].classList.remove('hover-js')
-        listHoverText[index].style.zIndex = "-1";
+        listSousMenu[index].classList.remove('hover-js')
+        
     })
 
 
