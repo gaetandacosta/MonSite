@@ -1,0 +1,95 @@
+/* === removing default button style ===*/
+.button {
+    margin: 0;
+    height: auto;
+    background: transparent;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* button styling */
+  .button {
+    --border-right: 6px;
+    --text-stroke-color: rgba(255,255,255,0.6);
+    --animation-color: #F5CB5C;
+    --fs-size: 2em;
+    letter-spacing: 3px;
+    text-decoration: none;
+    font-size: var(--fs-size);
+    font-family: "Arial";
+    position: relative;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--text-stroke-color);
+    background-color: black;
+    width: 100%;
+    z-index: 4;
+  }
+  /* this is the text, when you hover on button */
+  .hover-text {
+    position: absolute;
+    box-sizing: border-box;
+    content: attr(data-text);
+    color: var(--animation-color);
+    width: 0%;
+    inset: 0;
+    border-right: var(--border-right) solid var(--animation-color);
+    overflow: hidden;
+    transition: 0.5s;
+    -webkit-text-stroke: 1px var(--animation-color);
+  }
+
+  .actual-text{
+    color: #CFDBD5;
+  }
+
+  .sous-menu{
+    position: relative;
+    background-color: black;
+    color: #CFDBD5;
+    width: 500px;
+    height: 100px;
+    transition-duration: 750ms;
+    left: -500%;
+    top: 0%;
+    z-index: -1;
+  }
+  .sous-menu:hover ~ .hover-text {
+    width: 100%;
+    filter: drop-shadow(0 0 23px var(--animation-color));
+    
+  }
+
+
+
+.button:hover + .sous-menu,
+.sous-menu:hover {
+    display: block;
+    transition-duration: 250ms;
+}
+
+/* Ajoutez ces styles pour que l'animation sur le bouton reste active lors du survol du sous-menu */
+.button:hover  .hover-text,
+.sous-menu:hover ~ .button .hover-text {
+    width: 100%;
+    filter: drop-shadow(0 0 23px var(--animation-color));
+}
+
+
+
+  .total{
+    display: -webkit-box;
+    flex-direction: row;
+    width: 250px;
+    z-index: 3;
+    height: 500px;
+    background-color: red;
+  }
+
+  .sous-menu:hover,
+  .button:hover ~ .sous-menu {
+    transition-duration: 750ms;
+    z-index: 3;
+    left: 0%;
+}
