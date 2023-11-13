@@ -23,8 +23,11 @@
     color: transparent;
     -webkit-text-stroke: 1px var(--text-stroke-color);
     background-color: black;
-    width: 100%;
+    width: 200%;
     z-index: 4;
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: flex-end;
   }
   /* this is the text, when you hover on button */
   .hover-text {
@@ -38,10 +41,13 @@
     overflow: hidden;
     transition: 0.5s;
     -webkit-text-stroke: 1px var(--animation-color);
-  }
+    display: flex;
+    justify-content: flex-end;
+ }
 
   .actual-text{
     color: #CFDBD5;
+    padding-right: 6px;
   }
 
   .sous-menu{
@@ -53,6 +59,7 @@
     left: -500%;
     top: 0%;
     z-index: -1;
+    width: 100%;
   }
   .sous-menu:hover ~ .hover-text {
     width: 100%;
@@ -109,7 +116,7 @@
 .sous-menu a{
   transition-duration: 500ms;
   margin: 2%;
-  padding-right: 10%;
+  padding-right: 4%;
   margin-left: 4%;
   text-decoration: none;
   color: #CFDBD5;
