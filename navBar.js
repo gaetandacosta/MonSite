@@ -1,17 +1,18 @@
 let bar = document.getElementById('navBar');
-let listBouton = bar.querySelectorAll('a');
 let listSousMenu = bar.querySelectorAll('.sous-menu');
 let listHoverText = bar.querySelectorAll('.hover-text');
 
-for (let index = 0; index < listBouton.length; index++) {
+for (let index = 0; index < listSousMenu.length; index++) {
     listSousMenu[index]
-    .addEventListener('mouseover', () => 
-        listHoverText[index].classList.add('hover-js'))
-
-        
+    .addEventListener('mouseover', () => {
+        listHoverText[index].classList.add('hover-js');
+        listHoverText[index].style.zIndex = "3";
+    })
     listSousMenu[index]
-    .addEventListener('mouseleave', () => 
-        listHoverText[index].classList.remove('hover-js'))
+    .addEventListener('mouseleave', () => {
+        listHoverText[index].classList.remove('hover-js')
+        listHoverText[index].style.zIndex = "-1";
+    })
 
 
 }

@@ -70,8 +70,7 @@
 }
 
 /* Ajoutez ces styles pour que l'animation sur le bouton reste active lors du survol du sous-menu */
-.button:hover  .hover-text,
-.sous-menu:hover ~ .button .hover-text{
+.button:hover  .hover-text{
     width: 100%;
     filter: drop-shadow(0 0 23px var(--animation-color));
 }
@@ -81,15 +80,17 @@
   filter: drop-shadow(0 0 23px var(#F5CB5C));  
 }
 
+.t {
+  display: flex;
+  flex-direction: column;
+}
 
 
   .total{
     display: -webkit-box;
-    flex-direction: row;
     width: 250px;
     z-index: 3;
-    height: 500px;
-    background-color: red;
+ 
   }
 
   .sous-menu:hover,
