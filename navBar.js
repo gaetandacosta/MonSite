@@ -10,8 +10,8 @@ for (let index = 0; index < listSousMenu.length; index++) {
     })
     listSousMenu[index]
     .addEventListener('mouseleave', () => {
-        listSousMenu[index].classList.remove('hover-js')
-        
+        listHoverText[index].classList.remove('hover-js')
+        listSousMenu[index].style.zIndex = "-1";
     })
 
 
