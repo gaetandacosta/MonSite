@@ -48,7 +48,7 @@
     position: relative;
     background-color: black;
     color: #CFDBD5;
-    width: 500px;
+    padding-left: 6%;
     transition-duration: 750ms;
     left: -500%;
     top: 0%;
@@ -109,6 +109,8 @@
 .sous-menu a{
   transition-duration: 500ms;
   margin: 2%;
+  padding-right: 10%;
+  margin-left: 4%;
   text-decoration: none;
   color: #CFDBD5;
   width: 100%;
