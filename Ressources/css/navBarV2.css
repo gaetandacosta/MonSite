@@ -117,7 +117,7 @@
   .sous-menu:hover,
   .button-navBar:hover ~ .sous-menu {
     transition-duration: 750ms;
-    z-index: 9;
+    
     left: 0%;
 }
 
