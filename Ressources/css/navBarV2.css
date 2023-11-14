@@ -1,5 +1,16 @@
 /* === removing default button style ===*/
-.button {
+.navBar{
+  background: #242423;
+  color: #CFDBD5;
+  position: fixed;
+  width: 15%;
+  height: 100%;
+  flex-direction: column;
+  display: flex;
+  z-index: 8;
+}
+
+.button-navBar{
     margin: 0;
     height: auto;
     background: transparent;
@@ -9,7 +20,7 @@
   }
   
   /* button styling */
-  .button {
+  .button-navBar{
     --border-right: 6px;
     --text-stroke-color: rgba(255,255,255,0.6);
     --animation-color: #F5CB5C;
@@ -22,9 +33,9 @@
     text-transform: uppercase;
     color: transparent;
     -webkit-text-stroke: 1px var(--text-stroke-color);
-    background-color: black;
-    width: 200%;
-    z-index: 4;
+    background-color: #242423;
+    width: 100%;
+    z-index: 9;
     display: flex;
     /* flex-wrap: wrap; */
     justify-content: flex-end;
@@ -53,13 +64,13 @@
 
   .sous-menu{
     position: relative;
-    background-color: black;
+    background-color: #242423;
     color: #CFDBD5;
     padding-left: 6%;
     transition-duration: 750ms;
     left: -500%;
     top: 0%;
-    z-index: -1;
+    z-index: 7;
     width: 100%;
   }
   .sous-menu:hover ~ .hover-text {
@@ -70,14 +81,14 @@
 
 
 
-.button:hover + .sous-menu,
+.button-navBar:hover + .sous-menu,
 .sous-menu:hover {
     display: block;
     transition-duration: 250ms;
 }
 
 /* Ajoutez ces styles pour que l'animation sur le bouton reste active lors du survol du sous-menu */
-.button:hover  .hover-text{
+.button-navBar:hover  .hover-text{
     width: 100%;
     filter: drop-shadow(0 0 23px var(--animation-color));
 }
@@ -95,15 +106,15 @@
 
   .total-button{
     display: -webkit-box;
-    width: 250px;
-    z-index: 3;
+    width: 100%;
+    z-index: 9;
  
   }
 
   .sous-menu:hover,
-  .button:hover ~ .sous-menu {
+  .button-navBar:hover ~ .sous-menu {
     transition-duration: 750ms;
-    z-index: 3;
+    z-index: 9;
     left: 0%;
 }
 
@@ -123,4 +134,9 @@
   color: #CFDBD5;
   width: 100%;
   display: block;
+}
+
+.navBar a{
+  text-decoration: none;
+  color: #CFDBD5;
 }
