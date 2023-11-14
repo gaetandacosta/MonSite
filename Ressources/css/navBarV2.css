@@ -35,6 +35,7 @@
     -webkit-text-stroke: 1px var(--text-stroke-color);
     background-color: #242423;
     width: 100%;
+    margin-top: 6%;
     z-index: 9;
     display: flex;
     /* flex-wrap: wrap; */
@@ -101,6 +102,8 @@
 .list-button {
   display: flex;
   flex-direction: column;
+  width: 100%;
+  padding-top: 10%;
 }
 
 
@@ -127,7 +130,7 @@
 
 .sous-menu a {
   transition-duration: 500ms;
-  margin-top: 8%;
+  margin-top: 6%;
   /* margin-left: 4%; */
   padding-right: 6%;
   text-decoration: none;
