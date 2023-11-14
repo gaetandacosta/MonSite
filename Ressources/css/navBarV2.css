@@ -23,7 +23,7 @@
   .button-navBar{
     --border-right: 6px;
     --text-stroke-color: rgba(255,255,255,0.6);
-    --animation-color: #bd9f67;
+    --animation-color: #F5CB5C;
    /* --fs-size: 2em;*/
     letter-spacing: 3px;
     text-decoration: none;
@@ -56,11 +56,15 @@
     display: flex;
     justify-content: flex-end;
     height: 50%;
+    font-size: 15px;
+    letter-spacing: 2px;
  }
 
   .actual-text{
     color: #CFDBD5;
-    padding-right: 6px;
+    padding-right: 5.5px;
+    font-size: 15px;
+    letter-spacing: 2px;
   }
 
   .sous-menu{
@@ -96,7 +100,7 @@
 
 .hover-js{
   width: 100%;
-  filter: drop-shadow(0 0 23px var(#bd9f67));  
+  filter: drop-shadow(0 0 23px var(#F5CB5C));  
 }
 
 .list-button {
@@ -125,7 +129,7 @@
 .sous-menu a:hover{
   transition-duration: 500ms;
   color:#242423;
-  background-color: #bd9f67;
+  background-color: #F5CB5C;
   cursor: pointer;
 }
 
@@ -143,10 +147,4 @@
 .navBar a{
   text-decoration: none;
   color: #CFDBD5;
-}
-
-.black-text{
-  transition-duration: 600ms;
-  color: none
-  ;
 }

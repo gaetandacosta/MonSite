@@ -9,7 +9,7 @@
     transform-style: preserve-3d;
     transition: transform 0.6s;
     cursor: pointer;
-  }
+}
 
 .flipped {
     transform: rotateY(180deg);
@@ -25,49 +25,50 @@
     justify-content: center;
     flex-wrap: wrap;
     align-content: center;
-    
+
 }
 
 .back {
     transform: rotateY(180deg);
 }
-  
-  #logo-main, #logo-second {
+
+#logo-main,
+#logo-second {
     height: 100%;
-  }
-  
-  #logo-main {
+}
+
+#logo-main {
     fill: #bd9f67;
-  }
-  
-  #logo-second {
+}
+
+#logo-second {
     padding-bottom: 10px;
     fill: none;
     stroke: #bd9f67;
     stroke-width: 1px;
-  }
+}
 
-  .lettre-second{
+.lettre-second {
     padding-bottom: 10px;
     fill: #bd9f67;
     height: 100%;
-  }
-  
-  .border {
+}
+
+.border {
     position: absolute;
     inset: 0px;
     border: 2px solid #bd9f67;
     opacity: 0;
     transform: rotate(10deg);
     transition: all 0.5s ease-in-out;
-  }
-  
-  .bottom-text {
+}
+
+.bottom-text {
     position: absolute;
     left: 50%;
-    bottom: 13px;
+    bottom: 10px;
     transform: translateX(-50%);
-    font-size: 6px;
+    font-size: 9px;
     text-transform: uppercase;
     padding: 0px 5px 0px 8px;
     color: #bd9f67;
@@ -77,41 +78,42 @@
     transition: all 0.5s ease-in-out;
     display: flex;
     text-align: center;
-  }
-  
-  .content {
+    z-index: 4;
+}
+
+.content {
     transition: all 0.5s ease-in-out;
-  }
-  
-  .content .logo {
+}
+
+.content .logo {
     height: 35px;
     position: relative;
     width: 33px;
     overflow: hidden;
     transition: all 1s ease-in-out;
-  }
-  
-  .content .logo .logo1 {
+}
+
+.content .logo .logo1 {
     height: 33px;
     position: absolute;
     left: 0;
-  }
-  
-  .content .logo .logo2 {
+}
+
+.content .logo .logo2 {
     height: 33px;
     position: absolute;
     left: 33px;
-  }
-  
-  .content .logo .trail {
+}
+
+.content .logo .trail {
     position: absolute;
     right: 0;
     height: 100%;
     width: 100%;
     opacity: 0;
-  }
-  
-  .content .logo-bottom-text {
+}
+
+.content .logo-bottom-text {
     position: absolute;
     left: 50%;
     top: 50%;
@@ -123,75 +125,93 @@
     opacity: 0;
     letter-spacing: none;
     transition: all 0.5s ease-in-out 0.5s;
-  }
-  
-  .hover-front{
+}
+
+.hover-front {
     border-radius: 0;
     transform: scale(1.1);
-  }
-  
-  .front:hover .logo {
+}
+
+.front:hover .logo {
     width: 175px;
     animation: opacity 1s ease-in-out;
-  }
-  
-  .front:hover .border {
+}
+
+.front:hover .border {
     inset: 15px;
     opacity: 1;
     transform: rotate(0);
-  }
-  
-  .front:hover .bottom-text {
+}
+
+.front:hover .bottom-text {
     letter-spacing: 3px;
     opacity: 1;
     transform: translateX(-50%);
-  }
-  
-  .front:hover .content .logo-bottom-text {
+}
+
+.front:hover .content .logo-bottom-text {
     opacity: 1;
     letter-spacing: 9.5px;
-  }
-  
-  .front:hover .trail {
+}
+
+.front:hover .trail {
     animation: trail 1s ease-in-out;
-  }
-  
-  @keyframes opacity {
+}
+
+@keyframes opacity {
     0% {
-      border-right: 1px solid transparent;
+        border-right: 1px solid transparent;
     }
-  
+
     10% {
-      border-right: 1px solid #bd9f67;
+        border-right: 1px solid #bd9f67;
     }
-  
+
     80% {
-      border-right: 1px solid #bd9f67;
+        border-right: 1px solid #bd9f67;
     }
-  
+
     100% {
-      border-right: 1px solid transparent;
+        border-right: 1px solid transparent;
     }
-  }
-  
-  @keyframes trail {
+}
+
+@keyframes trail {
     0% {
-      background: linear-gradient(90deg, rgba(189, 159, 103, 0) 90%, rgb(189, 159, 103) 100%);
-      opacity: 0;
+        background: linear-gradient(90deg, rgba(189, 159, 103, 0) 90%, rgb(189, 159, 103) 100%);
+        opacity: 0;
     }
-  
+
     30% {
-      background: linear-gradient(90deg, rgba(189, 159, 103, 0) 70%, rgb(189, 159, 103) 100%);
-      opacity: 1;
+        background: linear-gradient(90deg, rgba(189, 159, 103, 0) 70%, rgb(189, 159, 103) 100%);
+        opacity: 1;
     }
-  
+
     70% {
-      background: linear-gradient(90deg, rgba(189, 159, 103, 0) 70%, rgb(189, 159, 103) 100%);
-      opacity: 1;
+        background: linear-gradient(90deg, rgba(189, 159, 103, 0) 70%, rgb(189, 159, 103) 100%);
+        opacity: 1;
     }
-  
+
     95% {
-      background: linear-gradient(90deg, rgba(189, 159, 103, 0) 90%, rgb(189, 159, 103) 100%);
-      opacity: 0;
+        background: linear-gradient(90deg, rgba(189, 159, 103, 0) 90%, rgb(189, 159, 103) 100%);
+        opacity: 0;
     }
-  }
+}
+
+.info-back-carte {
+    justify-content: left;
+    display: grid;
+}
+
+.info-back-carte p {
+    color: #bd9f67;
+    margin: 0px;
+    padding: 2% 6%;
+}
+
+.info-back-carte img {
+    width: 20%;
+    margin-right: 4%;
+    position: relative;
+    justify-self: right;
+}
