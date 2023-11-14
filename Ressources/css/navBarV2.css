@@ -28,7 +28,6 @@
     letter-spacing: 3px;
     text-decoration: none;
     font-size: var(--fs-size);
-    font-family: "Arial";
     position: relative;
     text-transform: uppercase;
     color: transparent;
@@ -147,4 +146,24 @@
 .navBar a{
   text-decoration: none;
   color: #CFDBD5;
+}
+
+
+.bas_navBar{
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  z-index: 2;
+  margin-bottom: 10%;
+  justify-content: flex-end;
+}
+
+
+.delimiter{
+  background-color: rgba(232,237,223,0.8);
+  width: 80%;
+  height: 3px;
+  border-radius: 3px;
+
+  margin: 5% 10%;
 }
