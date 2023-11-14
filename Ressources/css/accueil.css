@@ -154,3 +154,12 @@ main {
 p, a {
     font-size: 18px;
 }
+
+#home{
+    display: grid;
+    
+    justify-content: center;
+    
+    align-content: center;
+    padding: 2% 0%;
+}

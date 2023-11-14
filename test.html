@@ -6,10 +6,10 @@
 </header>
 
 <body>
-    <div class="card" onclick="flipCard()">
+    <div class="carte-info" onclick="flipCard()">
         <!-- Le contenu du recto de la carte -->
-        <div class="front">
-            <div class="content">
+        <div class="front-carte">
+            <div class="content-carte">
                 <div class="logo">
                     <div class="logo1">
                         <svg id="logo-main" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
@@ -58,7 +58,7 @@
         </div>
 
         <!-- Le contenu du verso de la carte -->
-        <div class="back">
+        <div class="back-carte">
             <div class="info-back-carte">
                 <img src="https://cdn.discordapp.com/attachments/782961560061476894/1093527643443449886/gaetan-mini.png" alt="Moi">
                 <p>
@@ -83,7 +83,7 @@
 
 <script>
     function flipCard() {
-        var card = document.querySelector('.card');
+        var card = document.querySelector('.carte-info');
         if (card.classList.contains('flipped')) {
             card.classList.remove('flipped');
         }
