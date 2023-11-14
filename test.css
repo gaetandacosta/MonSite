@@ -43,6 +43,7 @@
     -webkit-text-stroke: 1px var(--animation-color);
     display: flex;
     justify-content: flex-end;
+    height: 50%;
  }
 
   .actual-text{
@@ -113,11 +114,11 @@
   cursor: pointer;
 }
 
-.sous-menu a{
+.sous-menu a {
   transition-duration: 500ms;
-  margin: 2%;
-  padding-right: 4%;
-  margin-left: 4%;
+  margin-top: 8%;
+  /* margin-left: 4%; */
+  padding-right: 6%;
   text-decoration: none;
   color: #CFDBD5;
   width: 100%;
