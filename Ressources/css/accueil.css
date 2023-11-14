@@ -68,6 +68,9 @@ main{
     margin-top: -13%;
 }
 
+.btn-home a{
+    display: flex;
+}
 
 .btn-home{
     width: 50px;
