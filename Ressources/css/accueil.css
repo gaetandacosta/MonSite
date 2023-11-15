@@ -104,7 +104,7 @@ main{
 }
 
 .lecture_bar{
-    height: 10px;
+    height: 4px;
     left: 15%;
     position: fixed;
     background-color: #F5CB5C;

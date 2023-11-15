@@ -1,6 +1,6 @@
 .carte-info {
-    width: 500px;
-    height: 300px;
+    width: 750px;
+    height: 500px;
     background: #243137;
     position: relative;
     display: grid;
@@ -51,6 +51,7 @@
 
 .lettre-second {
     padding-bottom: 10px;
+    padding-right: 3%;
     fill: #bd9f67;
     height: 100%;
 }
@@ -104,7 +105,9 @@
     height: 33px;
     position: absolute;
     left: 33px;
+    display: flex;
 }
+
 
 .content-carte .logo .trail {
     position: absolute;
@@ -201,12 +204,21 @@
 
 .info-back-carte {
     justify-content: left;
-    display: grid;
+    display: flex;
+    flex-direction: column;
 }
 
 .info-back-carte p {
     color: #bd9f67;
     margin: 0px;
+    font-size: 15px;
+    padding: 2% 6%;
+}
+
+.info-back-carte h3 {
+    color: #bd9f67;
+    margin: 0px;
+    font-size: 25px;
     padding: 2% 6%;
 }
 
@@ -215,4 +227,32 @@
     margin-right: 4%;
     position: relative;
     justify-self: right;
+}
+
+.haut-carte-back{
+    justify-content: space-around;
+    display: flex;
+    
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.bas-carte-back{
+    display: flex;
+    flex-direction: row;
+}
+
+.gauche-back{
+    width: 75%;
+}
+
+.droite-back{
+    width: 25%;
+}
+.gauche-back p{
+    text-align: left; 
+}
+
+.droite-back p{
+    text-align: right;
 }
