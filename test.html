@@ -6,10 +6,77 @@
 </header>
 
 <body>
-    <div>
+    <div class="button-container" id="navbar">
+        <div class="navBar-lien">
+            <div>
+                <h2>
+                    à propos de moi
+                </h2>
+            </div>
+            <div>
+                <h2>
+                    Compétences
+                </h2>
+                <ul>
+                    <li>Langages</li>
+                    <li>Outils</li>
+                    <li>Compétences personnelles</li>
+                </ul>
+            </div>
+            <div>
+                <h2>
+                    Projets
+                </h2>
+                <ul>
+                    <li>Chocomaps</li>
+                    <li>CGJ 2023</li>
+                    <li>Chocolask</li>
+                    <li>Aventuriers du Rail</li>
+                </ul>
+            </div>
+            <div>
+                <h2>
+                    Expériences
+                </h2>
+                <ul>
+                    <li>été 2023</li>
+                    <li>Stage Chronotech</li>
+                    <li>été 2022</li>
+                    <li>Interim</li>
+                    <li>été 2022/2021</li>
+                </ul>
+            </div>
 
-    
+        </div>
 
-</div>
+
+        <button id="button-deploy-navbar" class="swallow__icon" onclick="AlternateNavBar()">
+            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
+                <path
+                    d="M470.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 256 265.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160zm-352 160l160-160c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L210.7 256 73.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0z" />
+            </svg>
+        </button>
+        <script>
+            let button = document.getElementById('navbar')
+            let left = button.offsetWidth - document.getElementById('button-deploy-navbar').offsetWidth
+            left = left*-1;
+            button.style.left= left+"px"
+            function AlternateNavBar() {
+                left = left*-1;
+                if(left < 0){
+                    button.classList.remove('deployed-navbar')
+                    button.style.left= left+"px";
+                }
+                else
+                {
+                    button.classList.add('deployed-navbar')
+                    button.style.left= 5+"px";
+                }
+            }
+        </script>
+
+    </div>
+
+
 
 </body>
