@@ -6,7 +6,6 @@
     align-items: flex-start;
     justify-content: space-around;
     border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.35) 15px 5px 35px, rgba(245, 204, 92, 0.5) 20px 10px 15px;
     z-index: 4;
     padding: 5px;
     color: #CFDBD5;
@@ -18,6 +17,7 @@
     position: absolute;
     transition-duration: .8s;
     position: fixed;
+    z-index: 10;
 }
 
 .deployed-navbar {
@@ -62,7 +62,6 @@
     align-items: center;
     justify-content: space-around;
     border-radius: 0px 100px 100px 0;
-    box-shadow: rgba(0, 0, 0, 0.35) 15px 5px 35px, rgba(245, 204, 92, 0.5) 20px 10px 15px;
     z-index: 4;
 }
 
@@ -109,3 +108,11 @@
     transform: translateX(10%);
     cursor: pointer;
 }
+
+
+.button-container  a {
+    text-decoration: none;
+    color: white;
+    margin: 20px;
+}
+
