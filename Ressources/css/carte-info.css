@@ -12,6 +12,20 @@
     justify-self: center;
 }
 
+.carte-info-inverse {
+    width: 750px;
+    height: 500px;
+    background: #bd9f67;
+    position: relative;
+    display: grid;
+    place-content: center;
+    border-radius: 10px;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+    cursor: pointer;
+    justify-self: center;
+}
+
 .flipped {
     transform: rotateY(180deg);
 }
@@ -206,6 +220,7 @@
     justify-content: left;
     display: flex;
     flex-direction: column;
+    
 }
 
 .info-back-carte p {
@@ -222,6 +237,27 @@
     padding: 2% 6%;
 }
 
+.info-back-carte-inverse {
+    justify-content: left;
+    display: flex;
+    flex-direction: column;
+    background-color: #bd9f67;
+}
+
+.info-back-carte-inverse p {
+    color: #243137;
+    margin: 0px;
+    font-size: 15px;
+    padding: 2% 6%;
+}
+
+.info-back-carte-inverse h3 {
+    color: #243137;
+    margin: 0px;
+    font-size: 25px;
+    padding: 2% 6%;
+}
+
 .info-back-carte img {
     width: 20%;
     margin-right: 4%;
@@ -230,11 +266,32 @@
 }
 
 .haut-carte-back{
-    justify-content: space-around;
     display: flex;
-    
     align-items: center;
     flex-wrap: wrap;
+}
+
+.haut-droit-back {
+    flex: 1;
+    justify-content: center;
+    display: flex;
+}
+.haut-gauche-back {
+    flex: 3;
+}
+
+.inverse-logo{
+    fill:#243137;
+}
+
+.haut-droit-back div {
+    background-image: url("https://cdn.discordapp.com/attachments/782961560061476894/1093527643829321758/gaetan.jpg?ex=6571c87b&is=655f537b&hm=df3927d160c3408b0100c74c407ee64efbe8d9e857f2ebde51c754d9947d10fe&");                                
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 128px;
+    height: 128px;
+    border-radius: 100%;
+    background-position: center;
 }
 
 .bas-carte-back{
@@ -242,17 +299,13 @@
     flex-direction: row;
 }
 
-.gauche-back{
-    width: 75%;
+.bas-gauche-back{
+    flex: 3;
 }
 
-.droite-back{
-    width: 25%;
+.bas-droite-back{
+   flex: 1;
 }
-.gauche-back p{
+.bas-gauche-back p{
     text-align: left; 
-}
-
-.droite-back p{
-    text-align: right;
 }

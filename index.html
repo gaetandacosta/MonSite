@@ -32,23 +32,23 @@
         <div class="navBar-lien">
             <div>
                 <a href="#">
-                    <h2>
+                    <h3>
                         Accueil
-                    </h2>
+                    </h3>
                 </a>
             </div>
             <div>
                 <a href="#about-me">
-                    <h2>
+                    <h3>
                         À propos de moi
-                    </h2>
+                    </h3>
                 </a>
             </div>
             <div>
                 <a href="#comp">
-                    <h2>
+                    <h3>
                         Compétences
-                    </h2>
+                    </h3>
                 </a>
                 <ul>
                     <li><a href="#lang">Langages</a></li>
@@ -58,9 +58,9 @@
             </div>
             <div>
                 <a href="#proj">
-                    <h2>
+                    <h3>
                         Projets
-                    </h2>
+                    </h3>
                 </a>
                 <ul>
                     <li><a href="#Chocomaps">Chocomaps</a></li>
@@ -71,10 +71,10 @@
             </div>
             <div>
                 <a href="#jobs">
-                <h2>
-                    Expériences
-                </h2>
-            </a>
+                    <h3>
+                        Expériences
+                    </h3>
+                </a>
                 <ul>
                     <li><a href="#ete_2023">été 2023</a></li>
                     <li><a href="#stage_chrtec">Stage Chronotech</a></li>
@@ -85,10 +85,10 @@
             </div>
             <div>
                 <a href="#contact-me">
-                <h2>
-                    Me contacter
-                </h2>
-            </a>
+                    <h3>
+                        Me contacter
+                    </h3>
+                </a>
 
             </div>
 
@@ -196,19 +196,23 @@
                     <div class="info-back-carte">
                         <div class="haut-carte-back">
                             <!-- Haut -->
-                            <h3>À propos de moi</h3>
-                            <img src="https://cdn.discordapp.com/attachments/782961560061476894/1093527643443449886/gaetan-mini.png"
-                                alt="Moi">
+                            <div class="haut-gauche-back">
+                                <h3>À propos de moi</h3>
+                            </div>
+                            <div class="haut-droit-back">
+                                <div class="img-moi"></div>
+                            </div>
+
 
                         </div>
                         <div class="bas-carte-back">
 
 
-                            <div class="gauche-back">
+                            <div class="bas-gauche-back">
 
                                 <p> Bonjour et bienvenue sur mon portfolio, je suis Gaëtan Da Costa et je vais vous
                                     détailler différents
-                                    aspects de ma vie personnelles et professionnelles, mes compétences et aussi
+                                    aspects de ma vie personnelles, mes compétences et aussi
                                     différentes expériences
                                     dans le monde du travail que j'ai eu. Je suis étudiant en 3eme année en BUT
                                     informatique en parcours
@@ -227,7 +231,7 @@
                                     de plus j'aime analyser et trouver des solutions à des problèmes complexes.
                                 </p>
                             </div>
-                            <div class="droite-back">
+                            <div class="bas-droite-back">
                                 <p id="age"></p>
                                 <p>Gaetan Da Costa
                                     étudiant en informatique
@@ -252,10 +256,129 @@
                     </script>
                 </div>
             </div>
-            <img style="display: none;"
-                src="https://cdn.discordapp.com/attachments/782961560061476894/1093527643829321758/gaetan.jpg"
-                alt="gaetan" class="w3-image gaetan">
+
         </div>
+
+        <div id="home">
+            <div class="carte-info carte-info-inverse" onclick="flipCard(this)">
+
+                <!-- Le contenu du recto de la carte -->
+                <div class="front-carte" id="comp">
+                    <div class="content-carte">
+                        <div class="logo inverse-logo">
+                            <div class="logo1">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512">
+                                    <path
+                                        d="M329.1 142.9c-62.5-62.5-155.8-62.5-218.3 0s-62.5 163.8 0 226.3s155.8 62.5 218.3 0c12.5-12.5 32.8-12.5 45.3 0s12.5 32.8 0 45.3c-87.5 87.5-221.3 87.5-308.8 0s-87.5-229.3 0-316.8s221.3-87.5 308.8 0c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0z" />
+                                </svg>
+                            </div>
+                            <div class="logo2">
+
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
+                                    <path
+                                        d="M224 96a160 160 0 1 0 0 320 160 160 0 1 0 0-320zM448 256A224 224 0 1 1 0 256a224 224 0 1 1 448 0z" />
+                                </svg>
+
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
+                                    <path
+                                        d="M22.7 33.4c13.5-4.1 28.1 1.1 35.9 12.9L224 294.3 389.4 46.2c7.8-11.7 22.4-17 35.9-12.9S448 49.9 448 64V448c0 17.7-14.3 32-32 32s-32-14.3-32-32V169.7L250.6 369.8c-5.9 8.9-15.9 14.2-26.6 14.2s-20.7-5.3-26.6-14.2L64 169.7V448c0 17.7-14.3 32-32 32s-32-14.3-32-32V64C0 49.9 9.2 37.5 22.7 33.4z" />
+                                </svg>
+
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512">
+                                    <path
+                                        d="M0 96C0 60.7 28.7 32 64 32h96c88.4 0 160 71.6 160 160s-71.6 160-160 160H64v96c0 17.7-14.3 32-32 32s-32-14.3-32-32V320 96zM64 288h96c53 0 96-43 96-96s-43-96-96-96H64V288z" />
+                                </svg>
+
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512">
+                                    <path
+                                        d="M64 32C28.7 32 0 60.7 0 96V256 416c0 35.3 28.7 64 64 64H288c17.7 0 32-14.3 32-32s-14.3-32-32-32H64V288H224c17.7 0 32-14.3 32-32s-14.3-32-32-32H64V96H288c17.7 0 32-14.3 32-32s-14.3-32-32-32H64z" />
+                                </svg>
+
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512">
+                                    <path
+                                        d="M32 32C14.3 32 0 46.3 0 64S14.3 96 32 96H160V448c0 17.7 14.3 32 32 32s32-14.3 32-32V96H352c17.7 0 32-14.3 32-32s-14.3-32-32-32H192 32z" />
+                                </svg>
+
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512">
+                                    <path
+                                        d="M64 32C28.7 32 0 60.7 0 96V256 416c0 35.3 28.7 64 64 64H288c17.7 0 32-14.3 32-32s-14.3-32-32-32H64V288H224c17.7 0 32-14.3 32-32s-14.3-32-32-32H64V96H288c17.7 0 32-14.3 32-32s-14.3-32-32-32H64z" />
+                                </svg>
+
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512">
+                                    <path
+                                        d="M21.1 33.9c12.7-4.6 26.9-.7 35.5 9.6L320 359.6V64c0-17.7 14.3-32 32-32s32 14.3 32 32V448c0 13.5-8.4 25.5-21.1 30.1s-26.9 .7-35.5-9.6L64 152.4V448c0 17.7-14.3 32-32 32s-32-14.3-32-32V64C0 50.5 8.4 38.5 21.1 33.9z" />
+                                </svg>
+
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512">
+                                    <path
+                                        d="M329.1 142.9c-62.5-62.5-155.8-62.5-218.3 0s-62.5 163.8 0 226.3s155.8 62.5 218.3 0c12.5-12.5 32.8-12.5 45.3 0s12.5 32.8 0 45.3c-87.5 87.5-221.3 87.5-308.8 0s-87.5-229.3 0-316.8s221.3-87.5 308.8 0c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0z" />
+                                </svg>
+
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512">
+                                    <path
+                                        d="M64 32C28.7 32 0 60.7 0 96V256 416c0 35.3 28.7 64 64 64H288c17.7 0 32-14.3 32-32s-14.3-32-32-32H64V288H224c17.7 0 32-14.3 32-32s-14.3-32-32-32H64V96H288c17.7 0 32-14.3 32-32s-14.3-32-32-32H64z" />
+                                </svg>
+
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512">
+                                    <path
+                                        d="M99.1 105.4C79 114 68.2 127.2 65.2 144.8c-2.4 14.1-.7 23.2 2 29.4c2.8 6.3 7.9 12.4 16.7 18.6c19.2 13.4 48.3 22.1 84.9 32.5c1 .3 1.9 .6 2.9 .8c32.7 9.3 72 20.6 100.9 40.7c15.7 10.9 29.9 25.5 38.6 45.1c8.8 19.8 10.8 42 6.6 66.3c-7.3 42.5-35.3 71.7-71.8 87.3c-35.4 15.2-79.1 17.9-123.7 10.9l-.2 0 0 0c-24-3.9-62.7-17.1-87.6-25.6c-4.8-1.7-9.2-3.1-12.8-4.3C5.1 440.8-3.9 422.7 1.6 405.9s23.7-25.8 40.5-20.3c4.9 1.6 10.2 3.4 15.9 5.4c25.4 8.6 56.4 19.2 74.4 22.1c36.8 5.7 67.5 2.5 88.5-6.5c20.1-8.6 30.8-21.8 33.9-39.4c2.4-14.1 .7-23.2-2-29.4c-2.8-6.3-7.9-12.4-16.7-18.6c-19.2-13.4-48.3-22.1-84.9-32.5c-1-.3-1.9-.6-2.9-.8c-32.7-9.3-72-20.6-100.9-40.7c-15.7-10.9-29.9-25.5-38.6-45.1c-8.8-19.8-10.8-42-6.6-66.3l31.5 5.5L2.1 133.9C9.4 91.4 37.4 62.2 73.9 46.6c35.4-15.2 79.1-17.9 123.7-10.9c13 2 52.4 9.6 66.6 13.4c17.1 4.5 27.2 22.1 22.7 39.2s-22.1 27.2-39.2 22.7c-11.2-3-48.1-10.2-60.1-12l4.9-31.5-4.9 31.5c-36.9-5.8-67.5-2.5-88.6 6.5z" />
+                                </svg>
+
+
+
+                            </div>
+                            <span class="trail"></span>
+                        </div>
+                        <span class="logo-bottom-text">Informatique</span>
+                    </div>
+                    <span class="bottom-text">Cliquez pour en savoir plus</span>
+                    <div class="border"></div>
+                </div>
+
+                <!-- Le contenu du verso de la carte -->
+                <div class="back-carte">
+                    <div class="info-back-carte-inverse">
+                        <div class="haut-carte-back-inverse">
+                            <!-- Haut -->
+                            <div class="haut-gauche-back">
+                                <h3>À propos de moi</h3>
+                            </div>
+                            <div class="haut-droit-back">
+                                <div class="img-moi"></div>
+                            </div>
+
+
+                        </div>
+                        <div class="bas-carte-back">
+
+
+                            <div class="bas-gauche-back">
+
+                                <p> test texte
+                                </p>
+                            </div>
+                            <div class="bas-droite-back">
+
+                                <p>autre test
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <script defer>
+                        function flipCard(cible) {
+                            if (cible.classList.contains('flipped')) {
+                                cible.classList.remove('flipped');
+                            }
+                            else
+                                cible.classList.add('flipped');
+                        }
+                    </script>
+                </div>
+            </div>
+
+        </div>
+
 
         <div class="w3-content w3-justify w3-text-grey w3-padding-64 fondGris" id="comp">
             <h2 class="w3-text-light-grey">Mes Compétences</h2>
