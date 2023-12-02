@@ -2,9 +2,7 @@
     display: grid;
     grid-template-columns: 60% 40%;
     justify-content: center;
-    margin-top: 3%;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin: 3% 5%;
 }
 
 .desc-lang .lang{

@@ -120,6 +120,8 @@
                     button.style.left = 5 + "px";
                 }
             }
+
+
         </script>
 
     </div>
@@ -135,563 +137,390 @@
 
 
     <div id="main">
-
         <div class="lecture_bar" id="barre_lecture"></div>
-        <div id="home">
-            <div class="carte-info" onclick="flipCard(this)">
+        <!-- Le contenu du verso de la carte -->
 
-                <!-- Le contenu du recto de la carte -->
-                <div class="front-carte" id="about-me">
-                    <div class="content-carte">
-                        <div class="logo">
-                            <div class="logo1">
-                                <svg id="logo-main" xmlns="http://www.w3.org/2000/svg" height="1em"
-                                    viewBox="0 0 448 512">
-                                    <path
-                                        d="M224 96C135.6 96 64 167.6 64 256s71.6 160 160 160c77.4 0 142-55 156.8-128H256c-17.7 0-32-14.3-32-32s14.3-32 32-32H400c25.8 0 49.6 21.4 47.2 50.6C437.8 389.6 341.4 480 224 480C100.3 480 0 379.7 0 256S100.3 32 224 32c57.4 0 109.7 21.6 149.3 57c13.2 11.8 14.3 32 2.5 45.2s-32 14.3-45.2 2.5C302.3 111.4 265 96 224 96z" />
-                                </svg>
-                            </div>
-                            <div class="logo2">
-                                <svg class="lettre-second" xmlns="http://www.w3.org/2000/svg" height="1em"
-                                    viewBox="0 0 384 512">
-                                    <path
-                                        d="M221.5 51.7C216.6 39.8 204.9 32 192 32s-24.6 7.8-29.5 19.7l-120 288-40 96c-6.8 16.3 .9 35 17.2 41.8s35-.9 41.8-17.2L93.3 384H290.7l31.8 76.3c6.8 16.3 25.5 24 41.8 17.2s24-25.5 17.2-41.8l-40-96-120-288zM264 320H120l72-172.8L264 320z" />
-                                </svg>
 
-                                <svg class="lettre-second" xmlns="http://www.w3.org/2000/svg" height="1em"
-                                    viewBox="0 0 320 512">
-                                    <path
-                                        d="M64 32C28.7 32 0 60.7 0 96V256 416c0 35.3 28.7 64 64 64H288c17.7 0 32-14.3 32-32s-14.3-32-32-32H64V288H224c17.7 0 32-14.3 32-32s-14.3-32-32-32H64V96H288c17.7 0 32-14.3 32-32s-14.3-32-32-32H64z" />
-                                </svg>
 
-                                <svg class="lettre-second" xmlns="http://www.w3.org/2000/svg" height="1em"
-                                    viewBox="0 0 384 512">
-                                    <path
-                                        d="M32 32C14.3 32 0 46.3 0 64S14.3 96 32 96H160V448c0 17.7 14.3 32 32 32s32-14.3 32-32V96H352c17.7 0 32-14.3 32-32s-14.3-32-32-32H192 32z" />
-                                </svg>
 
-                                <svg class="lettre-second" xmlns="http://www.w3.org/2000/svg" height="1em"
-                                    viewBox="0 0 384 512">
-                                    <path
-                                        d="M221.5 51.7C216.6 39.8 204.9 32 192 32s-24.6 7.8-29.5 19.7l-120 288-40 96c-6.8 16.3 .9 35 17.2 41.8s35-.9 41.8-17.2L93.3 384H290.7l31.8 76.3c6.8 16.3 25.5 24 41.8 17.2s24-25.5 17.2-41.8l-40-96-120-288zM264 320H120l72-172.8L264 320z" />
-                                </svg>
-
-                                <svg class="lettre-second" xmlns="http://www.w3.org/2000/svg" height="1em"
-                                    viewBox="0 0 384 512">
-                                    <path
-                                        d="M21.1 33.9c12.7-4.6 26.9-.7 35.5 9.6L320 359.6V64c0-17.7 14.3-32 32-32s32 14.3 32 32V448c0 13.5-8.4 25.5-21.1 30.1s-26.9 .7-35.5-9.6L64 152.4V448c0 17.7-14.3 32-32 32s-32-14.3-32-32V64C0 50.5 8.4 38.5 21.1 33.9z" />
-                                </svg>
-
-                            </div>
-                            <span class="trail"></span>
-                        </div>
-                        <span class="logo-bottom-text">Da Costa</span>
+        <div id="about-me" class="carte carte-foncee texte-clair">
+            <div>
+                <h3 class="titre-carte">À propos de moi</h3>
+                <div class="grid-carte responsive-reverse">
+                    <div>
+                        <p class="texte-left"> Bonjour et bienvenue sur mon portfolio, je suis Gaëtan Da Costa et je
+                            vais vous
+                            détailler différents
+                            aspects de ma vie personnelles, mes compétences et aussi
+                            différentes expériences
+                            dans le monde du travail que j'ai eu. Je suis étudiant en 3eme année en BUT
+                            informatique en parcours
+                            Réalisation
+                            d'Application Conception, Developpement, Validation (RACDV). Et
+                            depuis mon plus jeune âge, je me suis tourné vers ce domaine, car j'aimais bien
+                            essayer de
+                            comprendre comment un jeu fonctionnait, en effet, j'essayais de trouver différents
+                            bugs et c'est ainsi
+                            que je me suis dit "et pourquoi je ne ferais pas des jeux moi aussi". J'ai l'esprit
+                            compétiteur mais
+                            aussi coopératif, j'aime me donner à fond dans un projet qui me plaît. Plus tard,
+                            j'envisage de
+                            travailler dans la conception de logiciels ou applications. J'aime bien le web et
+                            les bases de données,
+                            de plus j'aime analyser et trouver des solutions à des problèmes complexes.
+                        </p>
                     </div>
-                    <span class="bottom-text">Cliquez pour en savoir plus</span>
-                    <div class="border"></div>
+                    <div style="display: grid;">
+                        <div class="img-moi"></div>
+                        <p id="age"></p>
+                        <p>Gaetan Da Costa
+                            étudiant en informatique
+                            3eme année de BUT Informatique
+                            IUT Montpellier
+                        </p>
+                    </div>
                 </div>
 
-                <!-- Le contenu du verso de la carte -->
-                <div class="back-carte">
-                    <div class="info-back-carte">
-                        <div class="haut-carte-back">
-                            <!-- Haut -->
-                            <div class="haut-gauche-back">
-                                <h3>À propos de moi</h3>
-                            </div>
-                            <div class="haut-droit-back">
-                                <div class="img-moi"></div>
-                            </div>
-
-
-                        </div>
-                        <div class="bas-carte-back">
-
-
-                            <div class="bas-gauche-back">
-
-                                <p> Bonjour et bienvenue sur mon portfolio, je suis Gaëtan Da Costa et je vais vous
-                                    détailler différents
-                                    aspects de ma vie personnelles, mes compétences et aussi
-                                    différentes expériences
-                                    dans le monde du travail que j'ai eu. Je suis étudiant en 3eme année en BUT
-                                    informatique en parcours
-                                    Réalisation
-                                    d'Application Conception, Developpement, Validation (RACDV). Et
-                                    depuis mon plus jeune âge, je me suis tourné vers ce domaine, car j'aimais bien
-                                    essayer de
-                                    comprendre comment un jeu fonctionnait, en effet, j'essayais de trouver différents
-                                    bugs et c'est ainsi
-                                    que je me suis dit "et pourquoi je ne ferais pas des jeux moi aussi". J'ai l'esprit
-                                    compétiteur mais
-                                    aussi coopératif, j'aime me donner à fond dans un projet qui me plaît. Plus tard,
-                                    j'envisage de
-                                    travailler dans la conception de logiciels ou applications. J'aime bien le web et
-                                    les bases de données,
-                                    de plus j'aime analyser et trouver des solutions à des problèmes complexes.
-                                </p>
-                            </div>
-                            <div class="bas-droite-back">
-                                <p id="age"></p>
-                                <p>Gaetan Da Costa
-                                    étudiant en informatique
-                                    3eme année de BUT Informatique
-                                    IUT Montpellier
-                                </p>
-                            </div>
-                        </div>
-
-                    </div>
-                    <script defer>
-                        function flipCard(cible) {
-                            if (cible.classList.contains('flipped')) {
-                                cible.classList.remove('flipped');
-                            }
-                            else
-                                cible.classList.add('flipped');
-                        }
-
-                        let age = new Date().getFullYear() - new Date("2003-08-29").getFullYear();
-                        document.getElementById('age').innerText = age + ' ans';
-                    </script>
-                </div>
             </div>
-
+            <script defer>
+                let age = new Date().getFullYear() - new Date("2003-08-29").getFullYear();
+                document.getElementById('age').innerText = age + ' ans';
+            </script>
         </div>
-
-        <div id="home">
-            <div class="carte-info carte-info-inverse" onclick="flipCard(this)">
-
-                <!-- Le contenu du recto de la carte -->
-                <div class="front-carte" id="comp">
-                    <div class="content-carte">
-                        <div class="logo inverse-logo">
-                            <div class="logo1">
-                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512">
-                                    <path
-                                        d="M329.1 142.9c-62.5-62.5-155.8-62.5-218.3 0s-62.5 163.8 0 226.3s155.8 62.5 218.3 0c12.5-12.5 32.8-12.5 45.3 0s12.5 32.8 0 45.3c-87.5 87.5-221.3 87.5-308.8 0s-87.5-229.3 0-316.8s221.3-87.5 308.8 0c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0z" />
-                                </svg>
+        <!-- Le contenu du verso de la carte -->
+        <div id="comp" class="carte carte-claire texte-fonce">
+            <div>
+                <h3 class="titre-carte">Compétences techiques et personnelles</h3>
+                <div class="info-carte-tot">
+                    <div id="lang">
+                        <h3>Langages informatique</h3>
+                        <p>Lors de mes études, j'ai pu apprendre de nouveaux langages qui sont les suivants :</p>
+                        <div class="lang-desc" id="lang-desc">
+                            <div class="lang">
+                                <label for="PHP">PHP</label>
+                                <div id="PHP" class="Progress">
+                                    <div id="PHP_Progress" class="Bar"></div>
+                                </div>
                             </div>
-                            <div class="logo2">
-
-                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
-                                    <path
-                                        d="M224 96a160 160 0 1 0 0 320 160 160 0 1 0 0-320zM448 256A224 224 0 1 1 0 256a224 224 0 1 1 448 0z" />
-                                </svg>
-
-                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
-                                    <path
-                                        d="M22.7 33.4c13.5-4.1 28.1 1.1 35.9 12.9L224 294.3 389.4 46.2c7.8-11.7 22.4-17 35.9-12.9S448 49.9 448 64V448c0 17.7-14.3 32-32 32s-32-14.3-32-32V169.7L250.6 369.8c-5.9 8.9-15.9 14.2-26.6 14.2s-20.7-5.3-26.6-14.2L64 169.7V448c0 17.7-14.3 32-32 32s-32-14.3-32-32V64C0 49.9 9.2 37.5 22.7 33.4z" />
-                                </svg>
-
-                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512">
-                                    <path
-                                        d="M0 96C0 60.7 28.7 32 64 32h96c88.4 0 160 71.6 160 160s-71.6 160-160 160H64v96c0 17.7-14.3 32-32 32s-32-14.3-32-32V320 96zM64 288h96c53 0 96-43 96-96s-43-96-96-96H64V288z" />
-                                </svg>
-
-                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512">
-                                    <path
-                                        d="M64 32C28.7 32 0 60.7 0 96V256 416c0 35.3 28.7 64 64 64H288c17.7 0 32-14.3 32-32s-14.3-32-32-32H64V288H224c17.7 0 32-14.3 32-32s-14.3-32-32-32H64V96H288c17.7 0 32-14.3 32-32s-14.3-32-32-32H64z" />
-                                </svg>
-
-                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512">
-                                    <path
-                                        d="M32 32C14.3 32 0 46.3 0 64S14.3 96 32 96H160V448c0 17.7 14.3 32 32 32s32-14.3 32-32V96H352c17.7 0 32-14.3 32-32s-14.3-32-32-32H192 32z" />
-                                </svg>
-
-                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512">
-                                    <path
-                                        d="M64 32C28.7 32 0 60.7 0 96V256 416c0 35.3 28.7 64 64 64H288c17.7 0 32-14.3 32-32s-14.3-32-32-32H64V288H224c17.7 0 32-14.3 32-32s-14.3-32-32-32H64V96H288c17.7 0 32-14.3 32-32s-14.3-32-32-32H64z" />
-                                </svg>
-
-                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512">
-                                    <path
-                                        d="M21.1 33.9c12.7-4.6 26.9-.7 35.5 9.6L320 359.6V64c0-17.7 14.3-32 32-32s32 14.3 32 32V448c0 13.5-8.4 25.5-21.1 30.1s-26.9 .7-35.5-9.6L64 152.4V448c0 17.7-14.3 32-32 32s-32-14.3-32-32V64C0 50.5 8.4 38.5 21.1 33.9z" />
-                                </svg>
-
-                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512">
-                                    <path
-                                        d="M329.1 142.9c-62.5-62.5-155.8-62.5-218.3 0s-62.5 163.8 0 226.3s155.8 62.5 218.3 0c12.5-12.5 32.8-12.5 45.3 0s12.5 32.8 0 45.3c-87.5 87.5-221.3 87.5-308.8 0s-87.5-229.3 0-316.8s221.3-87.5 308.8 0c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0z" />
-                                </svg>
-
-                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512">
-                                    <path
-                                        d="M64 32C28.7 32 0 60.7 0 96V256 416c0 35.3 28.7 64 64 64H288c17.7 0 32-14.3 32-32s-14.3-32-32-32H64V288H224c17.7 0 32-14.3 32-32s-14.3-32-32-32H64V96H288c17.7 0 32-14.3 32-32s-14.3-32-32-32H64z" />
-                                </svg>
-
-                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512">
-                                    <path
-                                        d="M99.1 105.4C79 114 68.2 127.2 65.2 144.8c-2.4 14.1-.7 23.2 2 29.4c2.8 6.3 7.9 12.4 16.7 18.6c19.2 13.4 48.3 22.1 84.9 32.5c1 .3 1.9 .6 2.9 .8c32.7 9.3 72 20.6 100.9 40.7c15.7 10.9 29.9 25.5 38.6 45.1c8.8 19.8 10.8 42 6.6 66.3c-7.3 42.5-35.3 71.7-71.8 87.3c-35.4 15.2-79.1 17.9-123.7 10.9l-.2 0 0 0c-24-3.9-62.7-17.1-87.6-25.6c-4.8-1.7-9.2-3.1-12.8-4.3C5.1 440.8-3.9 422.7 1.6 405.9s23.7-25.8 40.5-20.3c4.9 1.6 10.2 3.4 15.9 5.4c25.4 8.6 56.4 19.2 74.4 22.1c36.8 5.7 67.5 2.5 88.5-6.5c20.1-8.6 30.8-21.8 33.9-39.4c2.4-14.1 .7-23.2-2-29.4c-2.8-6.3-7.9-12.4-16.7-18.6c-19.2-13.4-48.3-22.1-84.9-32.5c-1-.3-1.9-.6-2.9-.8c-32.7-9.3-72-20.6-100.9-40.7c-15.7-10.9-29.9-25.5-38.6-45.1c-8.8-19.8-10.8-42-6.6-66.3l31.5 5.5L2.1 133.9C9.4 91.4 37.4 62.2 73.9 46.6c35.4-15.2 79.1-17.9 123.7-10.9c13 2 52.4 9.6 66.6 13.4c17.1 4.5 27.2 22.1 22.7 39.2s-22.1 27.2-39.2 22.7c-11.2-3-48.1-10.2-60.1-12l4.9-31.5-4.9 31.5c-36.9-5.8-67.5-2.5-88.6 6.5z" />
-                                </svg>
-
-
-
+                            <div class="desc">
+                                <p>Structure MVC, lien avec base de données PostgresSQL, MySql</p>
                             </div>
-                            <span class="trail"></span>
-                        </div>
-                        <span class="logo-bottom-text">Informatique</span>
-                    </div>
-                    <span class="bottom-text">Cliquez pour en savoir plus</span>
-                    <div class="border"></div>
-                </div>
-
-                <!-- Le contenu du verso de la carte -->
-                <div class="back-carte">
-                    <div class="info-back-carte-inverse">
-                        <div class="haut-carte-back-inverse">
-                            <!-- Haut -->
-                            <div class="haut-gauche-back">
-                                <h3>À propos de moi</h3>
+                            <div class="lang">
+                                <label for="JS">JavaScript</label>
+                                <div id="JS" class="Progress">
+                                    <div id="JS_Progress" class="Bar"></div>
+                                </div>
                             </div>
-                            <div class="haut-droit-back">
-                                <div class="img-moi"></div>
+                            <div class="desc">
+                                <p>Requêtes AJAX, listenner, pages intéractives</p>
                             </div>
 
-
-                        </div>
-                        <div class="bas-carte-back">
-
-
-                            <div class="bas-gauche-back">
-
-                                <p> test texte
+                            <div class="lang">
+                                <label for="JAVA">Java</label>
+                                <div id="JAVA" class="Progress">
+                                    <div id="JAVA_Progress" class="Bar"></div>
+                                </div>
+                            </div>
+                            <div class="desc">
+                                <p>Différents patterns : Composite, Visiteur, Observeur, Factory, Singleton, Proxy,
+                                    Iterator</p>
+                            </div>
+                            <div class="lang">
+                                <label for="HTML">Html/CSS</label>
+                                <div id="HTML" class="Progress">
+                                    <div id="HTML_Progress" class="Bar"></div>
+                                </div>
+                            </div>
+                            <div class="desc">
+                                <p>Site statique, mono page, plusieurs pages</p>
+                            </div>
+                            <div class="lang">
+                                <label for="SQL">SQL</label>
+                                <div id="SQL" class="Progress">
+                                    <div id="SQL_Progress" class="Bar"></div>
+                                </div>
+                            </div>
+                            <div class="desc">
+                                <p>Diférents SGBD, Oracle, PhpMyadmin, PostgreSQL. Array, hstore, lateral, cross-join
                                 </p>
                             </div>
-                            <div class="bas-droite-back">
-
-                                <p>autre test
-                                </p>
+                            <div class="lang">
+                                <label for="C">C</label>
+                                <div id="C" class="Progress">
+                                    <div id="C_Progress" class="Bar"></div>
+                                </div>
+                            </div>
+                            <div class="desc">
+                                <p>Lecture, ecriture fichier, inversion pixel image, socket</p>
+                            </div>
+                            <div class="lang">
+                                <label for="Py">Python</label>
+                                <div id="Py" class="Progress">
+                                    <div id="Py_Progress" class="Bar"></div>
+                                </div>
+                            </div>
+                            <div class="desc">
+                                <p>Encryptage de messages, cryptographie, réccursivité</p>
+                            </div>
+                            <div class="lang">
+                                <label for="Delphi">Delphi</label>
+                                <div id="Delphi" class="Progress">
+                                    <div id="Delphi_Progress" class="Bar"></div>
+                                </div>
+                            </div>
+                            <div class="desc">
+                                <p>Application dynamique, pluggin</p>
                             </div>
                         </div>
-
+                        <hr class="w3-opacity trait">
                     </div>
-                    <script defer>
-                        function flipCard(cible) {
-                            if (cible.classList.contains('flipped')) {
-                                cible.classList.remove('flipped');
-                            }
-                            else
-                                cible.classList.add('flipped');
-                        }
-                    </script>
+                    <div id="outils">
+                        
+                        <div id="outils-desc">
+                            <h3>Outils informatique</h3>
+                            <p>Lors de mes études, j'ai appris à maîtriser différents outils :</p>
+                            <div class="desc-lang" id="desc-lang">
+                                <div class="desc">
+                                    <p>Projet réalisé en utilisant les outils GitHub et GitLab</p>
+                                </div>
+                                <div class="lang">
+                                    <label for="Git">Git</label>
+                                    <div id="Git" class="Progress">
+                                        <div id="Git_Progress" class="Bar"></div>
+                                    </div>
+                                </div>
+                                <div class="desc">
+                                    <p>Utilisation de Canva pour créer des affiches, maquettes, CV, diaporamas</p>
+                                </div>
+                                <div class="lang">
+                                    <label for="Canva">Canva</label>
+                                    <div id="Canva" class="Progress">
+                                        <div id="Canva_Progress" class="Bar"></div>
+                                    </div>
+                                </div>
+                                <div class="desc">
+                                    <p>Création de maquettes interactives, maquettes non-intéractives</p>
+                                </div>
+                                <div class="lang">
+                                    <label for="Fig">Figma</label>
+                                    <div id="Fig" class="Progress">
+                                        <div id="Fig_Progress" class="Bar"></div>
+                                    </div>
+                                </div>
+                                <div class="desc">
+                                    <p>Rédaction de rapport de projet, stage, feuille de calculs, diaporama</p>
+                                </div>
+                                <div class="lang">
+                                    <label for="Docs">Outils Google</label>
+                                    <div id="Docs" class="Progress">
+                                        <div id="Docs_Progress" class="Bar"></div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                        <hr class="w3-opacity trait">
+                    </div>
+                    <div id="compPers">
+                        <div>
+                            <h3>Qualités personnelles et compétences professionnelles</h3>
+                            <table class="Compétences">
+                                <tr>
+                                    <td class="diagramme_personnel">
+
+                                        <canvas id="personnelle"></canvas>
+                                        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+                                    </td>
+                                    <td class="desc-comp">
+                                        <h4>Qualités personnelles</h4>
+                                        <hr class="w3-opacity trait">
+                                        <p>Au cours de ma vie, j'ai développé plusieurs qualités personnelles. Je vous
+                                            présente
+                                            4
+                                            de mes qualités qui me semblent assez importantes.</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="desc-comp">
+                                        <h4>Compétences professionnelles</h4>
+                                        <hr class="w3-opacity trait">
+                                        <p>Au fils de mes expériences, j'ai découvert que j'aimais acquérir de nouvelles
+                                            connaissances dans différents domaines, de plus, cela m'a permis de
+                                            développer
+                                            différentes
+                                            compétences professionnelles.</p>
+                                    </td>
+                                    <td class="diagramme_personnel">
+                                        <canvas id="professionnel"></canvas>
+                                    </td>
+                                </tr>
+                            </table>
+
+                        </div>
+                    </div>
                 </div>
             </div>
-
         </div>
-
-
-        <div class="w3-content w3-justify w3-text-grey w3-padding-64 fondGris" id="comp">
-            <h2 class="w3-text-light-grey">Mes Compétences</h2>
-            <hr class="w3-opacity trait">
-            <div id="lang">
-                <h3>Langages informatique</h3>
-                <p>Lors de mes études, j'ai pu apprendre de nouveaux langages qui sont les suivants :</p>
-                <div class="lang-desc" id="lang-desc">
-                    <div class="lang">
-                        <label for="PHP">PHP</label>
-                        <div id="PHP" class="Progress">
-                            <div id="PHP_Progress" class="Bar"></div>
-                        </div>
-                    </div>
-                    <div class="desc">
-                        <p>Structure MVC, lien avec base de données PostgresSQL, PHPMyAdmin</p>
-                    </div>
-                    <div class="lang">
-                        <label for="JS">JavaScript</label>
-                        <div id="JS" class="Progress">
-                            <div id="JS_Progress" class="Bar"></div>
-                        </div>
-                    </div>
-                    <div class="desc">
-                        <p>Requêtes AJAX, listenner, pages intéractives</p>
-                    </div>
-
-                    <div class="lang">
-                        <label for="JAVA">Java</label>
-                        <div id="JAVA" class="Progress">
-                            <div id="JAVA_Progress" class="Bar"></div>
-                        </div>
-                    </div>
-                    <div class="desc">
-                        <p>Différents patterns : Composite, Visiteur, Observeur, Factory, Singleton, Proxy, Iterator</p>
-                    </div>
-                    <div class="lang">
-                        <label for="HTML">Html/CSS</label>
-                        <div id="HTML" class="Progress">
-                            <div id="HTML_Progress" class="Bar"></div>
-                        </div>
-                    </div>
-                    <div class="desc">
-                        <p>Site statique, mono page, plusieurs pages</p>
-                    </div>
-                    <div class="lang">
-                        <label for="SQL">SQL</label>
-                        <div id="SQL" class="Progress">
-                            <div id="SQL_Progress" class="Bar"></div>
-                        </div>
-                    </div>
-                    <div class="desc">
-                        <p>Diférents SGBD, Oracle, PhpMyadmin, PostgreSQL. Array, hstore, lateral, cross-join</p>
-                    </div>
-                    <div class="lang">
-                        <label for="C">C</label>
-                        <div id="C" class="Progress">
-                            <div id="C_Progress" class="Bar"></div>
-                        </div>
-                    </div>
-                    <div class="desc">
-                        <p>Lecture, ecriture fichier, inversion pixel image, socket</p>
-                    </div>
-                    <div class="lang">
-                        <label for="Py">Python</label>
-                        <div id="Py" class="Progress">
-                            <div id="Py_Progress" class="Bar"></div>
-                        </div>
-                    </div>
-                    <div class="desc">
-                        <p>Encryptage de messages, cryptographie, réccursivité</p>
-                    </div>
-                    <div class="lang">
-                        <label for="Delphi">Delphi</label>
-                        <div id="Delphi" class="Progress">
-                            <div id="Delphi_Progress" class="Bar"></div>
-                        </div>
-                    </div>
-                    <div class="desc">
-                        <p>Application dynamique, pluggin</p>
-                    </div>
-                </div>
-            </div>
-            <div id="outils">
-                <hr class="w3-opacity trait">
-                <div id="outils-desc">
-                    <h3>Outils informatique</h3>
-                    <p>Lors de mes études, j'ai appris à maîtriser différents outils :</p>
-                    <div class="desc-lang" id="desc-lang">
-                        <div class="desc">
-                            <p>Projet réalisé en utilisant les outils GitHub et GitLab</p>
-                        </div>
-                        <div class="lang">
-                            <label for="Git">Git</label>
-                            <div id="Git" class="Progress">
-                                <div id="Git_Progress" class="Bar"></div>
-                            </div>
-                        </div>
-                        <div class="desc">
-                            <p>Utilisation de Canva pour créer des affiches, maquettes, CV, diaporamas</p>
-                        </div>
-                        <div class="lang">
-                            <label for="Canva">Canva</label>
-                            <div id="Canva" class="Progress">
-                                <div id="Canva_Progress" class="Bar"></div>
-                            </div>
-                        </div>
-                        <div class="desc">
-                            <p>Création de maquettes interactives, maquettes non-intéractives</p>
-                        </div>
-                        <div class="lang">
-                            <label for="Fig">Figma</label>
-                            <div id="Fig" class="Progress">
-                                <div id="Fig_Progress" class="Bar"></div>
-                            </div>
-                        </div>
-                        <div class="desc">
-                            <p>Rédaction de rapport de projet, stage, feuille de calculs, diaporama</p>
-                        </div>
-                        <div class="lang">
-                            <label for="Docs">Outils Google</label>
-                            <div id="Docs" class="Progress">
-                                <div id="Docs_Progress" class="Bar"></div>
-                            </div>
-                        </div>
-
-
-                    </div>
-                </div>
-            </div>
-            <div id="compPers">
-                <hr class="w3-opacity trait">
+        <div id="proj" class="carte carte-foncee texte-clair">
+            <div>
+                <h3 class="titre-carte">Projets</h3>
                 <div>
-                    <h3>Qualités personnelles et compétences professionnelles</h3>
-                    <table class="Compétences">
-                        <tr>
-                            <td class="diagramme_personnel">
+                    <div class="total_projet">
+                        <h3 id="Chocomaps">ChocoMaps</h3>
 
-                                <canvas id="personnelle"></canvas>
-                                <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-                            </td>
-                            <td class="desc-comp">
-                                <h4>Qualités personnelles</h4>
-                                <hr class="w3-opacity trait">
-                                <p>Au cours de ma vie, j'ai développé plusieurs qualités personnelles. Je vous présente
-                                    4
-                                    de mes qualités qui me semblent assez importantes.</p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="desc-comp">
-                                <h4>Compétences professionnelles</h4>
-                                <hr class="w3-opacity trait">
-                                <p>Au fils de mes expériences, j'ai découvert que j'aimais acquérir de nouvelles
-                                    connaissances dans différents domaines, de plus, cela m'a permis de développer
-                                    différentes
-                                    compétences professionnelles.</p>
-                            </td>
-                            <td class="diagramme_personnel">
-                                <canvas id="professionnel"></canvas>
-                            </td>
-                        </tr>
-                    </table>
+                        <p class="desc-projet">Le projet consistait à optimiser une base de données et des algorithmes afin
+                            de pouvoir avoir une application qui peut calculer différents trajets en France, en quelques
+                            secondes</p>
 
+                        <div class="carrousel2">
+    
+                            <div class="diapo active">
+                                <img
+                                    src="https://cdn.discordapp.com/attachments/782961560061476894/1095383038793371670/image.png">
+                                <p>Page d'accueil</p>
+                            </div>
+                            <div class="diapo">
+                                <img
+                                    src="https://cdn.discordapp.com/attachments/782961560061476894/1094682525345001533/image.png">
+                                <p>Graphe pour notre algorithme</p>
+                            </div>
+    
+                            <button class="btn-carrousel prev">Précédent</button>
+                            <button class="btn-carrousel next">Suivant</button>
+                        </div>
+
+    
+                    </div>
+                    <hr class="w3-opacity trait">
+                    <div class="total_projet">
+                       
+                        <h3 id="CGJ">Code Game Jam 2023</h3>
+
+                        <p class="desc-projet">J'ai participé à la Code Game Jam 2023, le but est très simple : nous avons
+                            un thème (cette année, c'était "maître du temps") et nous devons concevoir un jeu en 24h
+                            (brainstorm non compris) en respectant ce thème.
+                            Ce fut une superbe expérience !</p>
+
+                        <div class="carrousel2">
+    
+                            <div class="diapo active">
+                                <img
+                                    src="https://cdn.discordapp.com/attachments/782961560061476894/1094647796558221352/20230124_131642.png">
+                                <p>Notre équipe</p>
+                            </div>
+                            <div class="diapo">
+                                <img
+                                    src="https://cdn.discordapp.com/attachments/894639303827808378/1094647233066061844/image.png">
+                                <p>Moi en train de travailler</p>
+                            </div>
+    
+                            <button class="btn-carrousel prev">Précédent</button>
+                            <button class="btn-carrousel next">Suivant</button>
+                        </div>
+
+    
+                    </div>
+                    <hr class="w3-opacity trait">
+                    <div class="total_projet">
+                        
+                        <h3 id="Chocolask">Chocolask</h3>
+
+                        <p class="desc-projet">Le but de ce projet était de créer un site web dynamique en php, html, css et
+                            un
+                            peu de JavaScript. Ce site est un endroit où les utilisateurs peuvent se créer un compte ou se
+                            connecter afin de poser des questions, de proposer des réponses et de voter pour les réponses
+                            qu'ils
+                            préfèrent.</p>
+
+                        <div class="carrousel2">
+    
+                            <div class="diapo active">
+                                <img
+                                    src="https://cdn.discordapp.com/attachments/782961560061476894/1093527642109661245/questions-chocolask.jpg">
+                                <p>Page d'accueil</p>
+                            </div>
+                            <div class="diapo">
+                                <img
+                                    src="https://cdn.discordapp.com/attachments/782961560061476894/1093527642977878046/login-chocolask.jpg">
+                                <p>Page de connextion</p>
+                            </div>
+                            <div class="diapo">
+                                <img
+                                    src="https://cdn.discordapp.com/attachments/782961560061476894/1093527642361315459/profil-chocolask.jpg">
+                                <p>Page de profil</p>
+                            </div>
+                            <div class="diapo">
+                                <img
+                                    src="https://cdn.discordapp.com/attachments/782961560061476894/1093527643233714236/home-chocolask.jpg">
+                                <p>Page des Questions</p>
+                            </div>
+                            <div class="diapo">
+                                <img
+                                    src="https://cdn.discordapp.com/attachments/894639303827808378/1092704817014644756/image.png">
+                                <p>Page admin pour voir les utilisateurs</p>
+                            </div>
+                            <div class="diapo">
+                                <img
+                                    src="https://cdn.discordapp.com/attachments/782961560061476894/1093527644114518036/create-chocolask.jpg">
+                                <p>Page de création de question</p>
+                            </div>
+                            <button class="btn-carrousel prev">Précédent</button>
+                            <button class="btn-carrousel next">Suivant</button>
+                        </div>
+  
+                    </div>
+                    <hr class="w3-opacity trait">
+                    <div class="total_projet">
+                        <h3 id="AVD">Aventuriers du Rails Europe</h3>
+
+                        <p class="desc-projet">Nous devions créer le jeu de société "Les Aventuriers du Rails Europe" en
+                            JAVA en
+                            Binôme. Le projet était divisé en 3 partie :</p>
+                        <ul>
+                            <li>Le code</li>
+                            <li>Les graphes</li>
+                            <li>L'interface</li>
+                        </ul>
+                        <p class="desc-projet">Pour la partie code, nous avions une interface fonctionnelle et nous devions
+                            faire le
+                            code du jeu en prenant en compte les règles du jeu et des tests qui nous ont été fournis. Pour
+                            la
+                            partie graphe, nous devions utiliser différents algorithmes afin de calculer le court trajet, le
+                            plus
+                            long, etc. Enfin, pour la partie de l'interface, nous avions un code fonctionnel et on devait
+                            réaliser l'interface fonctionnelle du jeu. Cela va être difficile de vous illustrer le code donc
+                            je
+                            ne vous montre que la partie de l'interface.</p>
+
+                        <div class="carrousel2">
+    
+                            <div class="diapo active">
+                                <img
+                                    src="https://cdn.discordapp.com/attachments/894639303827808378/1095390832661626920/image.png">
+                                <p>Maquette du Projet</p>
+                            </div>
+                            <div class="diapo">
+                                <img
+                                    src="https://cdn.discordapp.com/attachments/782961560061476894/1093616417603067945/interFaceFinale-AVD.jpg">
+                                <p>Interface finale</p>
+                            </div>
+    
+                            <button class="btn-carrousel prev">Précédent</button>
+                            <button class="btn-carrousel next">Suivant</button>
+                        </div>
+                    </div>
                 </div>
+
             </div>
         </div>
-        <div class="fondBlanc">
-            <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="proj">
-                <h2 class="w3-text-light-grey">Mes Projets</h2>
-
-
-                <div class="total_projet">
-                    <hr class="w3-opacity trait">
-                    <h3 id="Chocomaps">ChocoMaps</h3>
-                    <div class="carrousel2">
-
-                        <div class="diapo active">
-                            <img
-                                src="https://cdn.discordapp.com/attachments/782961560061476894/1095383038793371670/image.png">
-                            <p>Page d'accueil</p>
-                        </div>
-                        <div class="diapo">
-                            <img
-                                src="https://cdn.discordapp.com/attachments/782961560061476894/1094682525345001533/image.png">
-                            <p>Graphe pour notre algorithme</p>
-                        </div>
-
-                        <button class="btn-carrousel prev">Précédent</button>
-                        <button class="btn-carrousel next">Suivant</button>
-                    </div>
-                    <p class="desc-projet">Le projet consistait à optimiser une base de données et des algorithmes afin
-                        de pouvoir avoir une application qui peut calculer différents trajets en France, en quelques
-                        secondes</p>
-
-                </div>
-                <div class="total_projet">
-                    <hr class="w3-opacity trait">
-                    <h3 id="CGJ">Code Game Jam 2023</h3>
-                    <div class="carrousel2">
-
-                        <div class="diapo active">
-                            <img
-                                src="https://cdn.discordapp.com/attachments/782961560061476894/1094647796558221352/20230124_131642.png">
-                            <p>Notre équipe</p>
-                        </div>
-                        <div class="diapo">
-                            <img
-                                src="https://cdn.discordapp.com/attachments/894639303827808378/1094647233066061844/image.png">
-                            <p>Moi en train de travailler</p>
-                        </div>
-
-                        <button class="btn-carrousel prev">Précédent</button>
-                        <button class="btn-carrousel next">Suivant</button>
-                    </div>
-                    <p class="desc-projet">J'ai participé à la Code Game Jam 2023, le but est très simple : nous avons
-                        un thème (cette année, c'était "maître du temps") et nous devons concevoir un jeu en 24h
-                        (brainstorm non compris) en respectant ce thème.
-                        Ce fut une superbe expérience !</p>
-
-                </div>
-
-                <div class="total_projet">
-                    <hr class="w3-opacity trait">
-                    <h3 id="Chocolask">Chocolask</h3>
-                    <div class="carrousel2">
-
-                        <div class="diapo active">
-                            <img
-                                src="https://cdn.discordapp.com/attachments/782961560061476894/1093527642109661245/questions-chocolask.jpg">
-                            <p>Page d'accueil</p>
-                        </div>
-                        <div class="diapo">
-                            <img
-                                src="https://cdn.discordapp.com/attachments/782961560061476894/1093527642977878046/login-chocolask.jpg">
-                            <p>Page de connextion</p>
-                        </div>
-                        <div class="diapo">
-                            <img
-                                src="https://cdn.discordapp.com/attachments/782961560061476894/1093527642361315459/profil-chocolask.jpg">
-                            <p>Page de profil</p>
-                        </div>
-                        <div class="diapo">
-                            <img
-                                src="https://cdn.discordapp.com/attachments/782961560061476894/1093527643233714236/home-chocolask.jpg">
-                            <p>Page des Questions</p>
-                        </div>
-                        <div class="diapo">
-                            <img
-                                src="https://cdn.discordapp.com/attachments/894639303827808378/1092704817014644756/image.png">
-                            <p>Page admin pour voir les utilisateurs</p>
-                        </div>
-                        <div class="diapo">
-                            <img
-                                src="https://cdn.discordapp.com/attachments/782961560061476894/1093527644114518036/create-chocolask.jpg">
-                            <p>Page de création de question</p>
-                        </div>
-                        <button class="btn-carrousel prev">Précédent</button>
-                        <button class="btn-carrousel next">Suivant</button>
-                    </div>
-                    <p class="desc-projet">Le but de ce projet était de créer un site web dynamique en php, html, css et
-                        un
-                        peu de JavaScript. Ce site est un endroit où les utilisateurs peuvent se créer un compte ou se
-                        connecter afin de poser des questions, de proposer des réponses et de voter pour les réponses
-                        qu'ils
-                        préfèrent.</p>
-                </div>
-                <div class="total_projet">
-                    <hr class="w3-opacity trait">
-                    <h3 id="AVD">Aventuriers du Rails Europe</h3>
-                    <div class="carrousel2">
-
-                        <div class="diapo active">
-                            <img
-                                src="https://cdn.discordapp.com/attachments/894639303827808378/1095390832661626920/image.png">
-                            <p>Maquette du Projet</p>
-                        </div>
-                        <div class="diapo">
-                            <img
-                                src="https://cdn.discordapp.com/attachments/782961560061476894/1093616417603067945/interFaceFinale-AVD.jpg">
-                            <p>Interface finale</p>
-                        </div>
-
-                        <button class="btn-carrousel prev">Précédent</button>
-                        <button class="btn-carrousel next">Suivant</button>
-                    </div>
-                    <p class="desc-projet">Nous devions créer le jeu de société "Les Aventuriers du Rails Europe" en
-                        JAVA en
-                        Binôme. Le projet était divisé en 3 partie :</p>
-                    <ul>
-                        <li>Le code</li>
-                        <li>Les graphes</li>
-                        <li>L'interface</li>
-                    </ul>
-                    <p class="desc-projet">Pour la partie code, nous avions une interface fonctionnelle et nous devions
-                        faire le
-                        code du jeu en prenant en compte les règles du jeu et des tests qui nous ont été fournis. Pour
-                        la
-                        partie graphe, nous devions utiliser différents algorithmes afin de calculer le court trajet, le
-                        plus
-                        long, etc. Enfin, pour la partie de l'interface, nous avions un code fonctionnel et on devait
-                        réaliser l'interface fonctionnelle du jeu. Cela va être difficile de vous illustrer le code donc
-                        je
-                        ne vous montre que la partie de l'interface.</p>
-                </div>
-            </div>
-        </div>
-        <div class="w3-content w3-justify w3-text-grey w3-padding-64 fondGris" id="jobs">
-            <h2 class="w3-text-light-grey">Mes expériences professionnelles</h2>
-            <div class="exps">
-                <hr class="w3-opacity trait">
-                <h3 id="ete_2023">été 2023</h3>
-                <div class="desc-lang">
+        
+        <div id="jobs" class="carte carte-claire texte-fonce">
+            <div>
+                <h3 class="titre-carte">Expériences professionnelles</h3>
+                <div class="info-carte-tot">
+                    <h3 id="ete_2023">été 2023</h3>
+                <div class="desc-lang responsive">
 
                     <div class="lang">
                         <p>Lors de ce job d'été, j'ai pu gagner beaucoup d'expériences personnelles. En effet, je
@@ -704,7 +533,8 @@
                         <img class="ete"
                             src="https://cdn.discordapp.com/attachments/782961560061476894/1145323855246790729/IMG_20230826_215917.jpg">
                     </div>
-
+                </div>
+                <div class="desc-lang responsive-reverse">
 
                     <div class="desc">
                         <img class="ete"
@@ -718,7 +548,7 @@
                 </div>
                 <hr class="w3-opacity trait">
                 <h3 id="stage_chrtec">Stage chronotech</h3>
-                <div class="desc-lang">
+                <div class="desc-lang responsive">
                     <div class="lang">
                         <p>J'ai effectué mon stage de fin d'année dans la société chronotech basé à pont saint
                             esprit. La société développe des logiciels et applications pour des laboratoires
@@ -733,7 +563,7 @@
                 </div>
                 <hr class="w3-opacity trait">
                 <h3 id="ete_2022">été 2022</h3>
-                <div class="desc-lang">
+                <div class="desc-lang responsive">
                     <div class="desc">
                         <img class="ete"
                             src="https://cdn.discordapp.com/attachments/782961560061476894/1094645839915405332/20220803_185618007.jpg">
@@ -743,7 +573,8 @@
                             burgers, frites, etc. J'étais donc amené à travailler en équipe. De plus, le week-end,
                             je devais nettoyer les bungalows en binômes.</p>
                     </div>
-
+                </div>
+                    <div class="desc-lang responsive-reverse">
 
                     <div class="lang">
                         <p>J'en retiens une expérience incroyable. Vous pouvez voir notre équipe sur cette photo.
@@ -758,7 +589,7 @@
                 <div>
                     <hr class="w3-opacity trait">
                     <h3 id="Interim">Intérim</h3>
-                    <div class="desc-lang">
+                    <div class="desc-lang responsive">
                         <div class="desc">
                             <img
                                 src="https://cdn.discordapp.com/attachments/782961560061476894/1094643145150582834/triangle.jpg">
@@ -773,7 +604,7 @@
                 </div>
                 <hr class="w3-opacity trait">
                 <h3 id="ete_20202021">été 2020/2021</h3>
-                <div class="desc-lang">
+                <div class="desc-lang responsive">
                     <div class="lang">
                         <p>Quand j'ai eu 16 ans, en 2020, je suis allé postuler pour travailler l'été à la mairie de
                             mon village. J'ai été embauché pour le mois de juillet à mis temps. Cette expérience fut
@@ -786,8 +617,12 @@
                     </div>
 
                 </div>
+                </div>
             </div>
         </div>
+        
+        
+        
         <footer class="footer" id="contact-me">
             <button class="btn-cssbuttons">
                 <span>Contactez Moi</span>
