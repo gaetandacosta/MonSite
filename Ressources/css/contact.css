@@ -53,6 +53,8 @@
     padding: 0;
     list-style-type: none;
     transform: translateY(-50%);
+    width: 24%;
+    margin: 0% 36%;
    }
    
    .btn-cssbuttons ul li {
@@ -66,9 +68,6 @@
     transition: 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
    }
    
-   .btn-cssbuttons ul li a:hover {
-    opacity: 0.5;
-   }
    .btn-cssbuttons:hover{
     border-radius: 24px;
    }
@@ -101,15 +100,30 @@
    .btn-cssbuttons:hover ul li:nth-child(4) a {
     transition-delay: 0.3s;
    }
-
+   .btn-cssbuttons:hover ul li:nth-child(5) a {
+    transition-delay: 0.35s;
+   }
 
    .btn-cssbuttons .icon{
     transition-duration: .2s;
     fill:white;
     scale: 1.2;
    }
-   .btn-cssbuttons .icon:hover {
-    scale: 1.5;
-    transition-duration: 0.2s;
-    fill: #bd9f67;
+
+   .btn-cssbuttons:hover ul li:nth-child(1) a:hover .icon{
+    fill: #4078c0;
    }
+   
+   .btn-cssbuttons:hover ul li:nth-child(2) a:hover .icon{
+    fill: #6e5494;
+   }
+   .btn-cssbuttons:hover ul li:nth-child(3) a:hover .icon{
+    fill: #6cc644;
+   }
+   .btn-cssbuttons:hover ul li:nth-child(4) a:hover .icon{
+    fill: #4078c0;
+   }
+   .btn-cssbuttons:hover ul li:nth-child(5) a:hover .icon{
+    fill: #bd2c00;
+   }
+
